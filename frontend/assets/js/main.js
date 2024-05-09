@@ -143,13 +143,25 @@ $(document).ready(function () {
 	
 	//Deposit complate
 	    // Number Active
-	var qvalue = $(".quick-value h5");
-	$(qvalue).on('click', function (e) {
-		$(qvalue).removeClass('active');
-		$(this).addClass('active');
-		let cval = $(this).html();
-		$("#dAmount, #amount").val('$'+cval+'.00');
-	});
+		var qvalue = $(".quick-value h5");
+
+$(qvalue).on('click', function (e) {
+    $(qvalue).removeClass('active');
+    $(this).addClass('active');
+    
+    let cval = $(this).text(); // Get the text content of the clicked element
+    let amountInNaira = parseFloat(cval).toFixed(2); // Convert to a floating-point number with two decimal places
+    
+    // Update the input field with the formatted amount in NGN
+    $("#amount").val('NGN ' + amountInNaira);
+    
+    // Calculate the total amount fee based on the selected value (example calculation)
+    let fee = parseFloat(cval) * 0.02; // Assuming a fee of 2% of the amount
+    $(".total__amount span:nth-child(2)").eq(0).text(amountInNaira); // Display amount fee
+    $(".total__amount span:nth-child(2)").eq(1).text('NGN ' + (amountInNaira + fee).toFixed(2)); // Display total amount
+});
+
+		
 	//Deposit complate
 
 	//Date Picker

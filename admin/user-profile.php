@@ -1,3 +1,9 @@
+<?php
+
+    require '../config/function.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1414,39 +1420,87 @@
             </div>
           </div>
           <!-- End Profile Cover -->
+          <?php
+// Check if user ID is provided in the URL
+if (isset($_GET['id']) && !empty($_GET['id'])) {
+    $userId = $_GET['id'];
 
-          <!-- Profile Header -->
-          <div class="text-center mb-5">
-            <!-- Avatar -->
-            <div class="avatar avatar-xxl avatar-circle profile-cover-avatar">
-              <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Image Description">
-              <span class="avatar-status avatar-status-success"></span>
+
+    // Prepare a SELECT query to fetch the user details by ID
+    $query = "SELECT * FROM users WHERE id = ?";
+    $stmt = mysqli_prepare($conn, $query);
+
+    if ($stmt) {
+        // Bind the user ID parameter to the query
+        mysqli_stmt_bind_param($stmt, "i", $userId);
+
+        // Execute the query
+        mysqli_stmt_execute($stmt);
+
+        // Get result
+        $result = mysqli_stmt_get_result($stmt);
+
+        // Check if a user with the given ID exists
+        if (mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+
+            // Extract user details
+            $full_name = $user['full_name'];
+            $email = $user['email'];
+            $last_login = $user['last_login'];
+            $created_date = $user['created_date']; // Assuming 'created_date' is the column containing join date
+
+            // Display the user profile details
+            ?>
+            <!-- Profile Header -->
+            <div class="text-center mb-5">
+                <!-- Avatar -->
+                <div class="avatar avatar-xxl avatar-circle profile-cover-avatar">
+                    <img class="avatar-img" src="assets/img/160x160/img9.jpg" alt="Avatar Image">
+                    <span class="avatar-status avatar-status-success"></span>
+                </div>
+                <!-- End Avatar -->
+
+                <h1 class="page-header-title"><?php echo $full_name; ?> <i class="bi-patch-check-fill fs-2 text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></h1>
+
+                <!-- List -->
+                <ul class="list-inline list-px-2">
+                    <li class="list-inline-item">
+                        <i class="bi-at me-1"></i>
+                        <span><?php echo $email; ?>,</span>
+                        <i class="bi-clock me-1"></i>
+                        <span><?php echo $last_login; ?></span>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <i class="bi-calendar-week me-1"></i>
+                        <span>Joined <?php echo $created_date; ?></span>
+                    </li>
+                </ul>
+                <!-- End List -->
             </div>
-            <!-- End Avatar -->
+            <!-- End Profile Header -->
+            <?php
+        } else {
+            // Display error message if user not found
+            echo "User not found.";
+        }
 
-            <h1 class="page-header-title">Ella Lauda <i class="bi-patch-check-fill fs-2 text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></h1>
+        // Close statement
+        mysqli_stmt_close($stmt);
+    } else {
+        // Display error message if query preparation fails
+        echo "Query preparation failed.";
+    }
 
-            <!-- List -->
-            <ul class="list-inline list-px-2">
-              <li class="list-inline-item">
-                <i class="bi-building me-1"></i>
-                <span>Htmlstream</span>
-              </li>
+    // Close database connection
+    mysqli_close($conn);
+} else {
+    // Display error message if user ID is missing or invalid
+    echo "Invalid request. User ID not provided.";
+}
+?>
 
-              <li class="list-inline-item">
-                <i class="bi-geo-alt me-1"></i>
-                <a href="#">San Francisco,</a>
-                <a href="#">US</a>
-              </li>
-
-              <li class="list-inline-item">
-                <i class="bi-calendar-week me-1"></i>
-                <span>Joined March 2017</span>
-              </li>
-            </ul>
-            <!-- End List -->
-          </div>
-          <!-- End Profile Header -->
 
           <!-- Nav -->
           <div class="js-nav-scroller hs-nav-scroller-horizontal mb-5">

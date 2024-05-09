@@ -1531,7 +1531,7 @@
                   </div>
                 </td>
                 <td class="table-column-ps-0">
-                  <a class="d-flex align-items-center" href="user-profile.html">
+                  <a class="d-flex align-items-center" href="user-profile.php?id=<?= $userItem['id']; ?>">
                     <div class="avatar avatar-circle">
                       <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
                     </div>

@@ -177,39 +177,74 @@ session_start(); // Start session
                                             <div class="form__tabs__wrap">
                                             <div class="container">
                                             <?php
-                                            if (isset($_POST["login"])) {
-                                            $email = $_POST["email"];
-                                            $password = $_POST["password"];
-                                                require_once "database.php";
-                                                $sql = "SELECT * FROM users WHERE email = '$email'";
-                                                $result = mysqli_query($conn, $sql);
-                                                $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                                                if ($user) {
-                                                    if (password_verify($password, $user["password"])) {
-                                                        session_start();
-                                                        $_SESSION["user"] = "yes";
-                                                        header("Location: index.php");
-                                                        die();
-                                                    }else{
-                                                        echo "<div class='alert alert-danger'>Password does not match</div>";
+
+                                                if (isset($_POST["login"])) {
+                                                    $email = $_POST["email"];
+                                                    $password = $_POST["password"];
+                                                    
+                                                    require_once "database.php"; // Include your database connection file
+
+                                                    // Retrieve user from the database based on email
+                                                    $sql = "SELECT id, full_name, password FROM users WHERE email = ?";
+                                                    $stmt = mysqli_prepare($conn, $sql);
+
+                                                    if ($stmt) {
+                                                        mysqli_stmt_bind_param($stmt, "s", $email);
+                                                        mysqli_stmt_execute($stmt);
+
+                                                        $result = mysqli_stmt_get_result($stmt);
+
+                                                        if ($result && mysqli_num_rows($result) > 0) {
+                                                            $user = mysqli_fetch_assoc($result);
+
+                                                            // Verify password using password_verify
+                                                            if (password_verify($password, $user["password"])) {
+                                                                // Set user session variables
+                                                                $_SESSION["user_id"] = $user["id"];
+                                                                $_SESSION["full_name"] = $user["full_name"];
+
+                                                                // Update last login time in the database (optional)
+                                                                $update_last_login_sql = "UPDATE users SET last_login = CURRENT_TIMESTAMP WHERE id = ?";
+                                                                $stmt_update_last_login = mysqli_prepare($conn, $update_last_login_sql);
+
+                                                                if ($stmt_update_last_login) {
+                                                                    mysqli_stmt_bind_param($stmt_update_last_login, "i", $user["id"]);
+                                                                    mysqli_stmt_execute($stmt_update_last_login);
+                                                                    mysqli_stmt_close($stmt_update_last_login);
+                                                                }
+
+                                                                // Redirect to dashboard with user ID
+                                                                header("Location: index.php");
+                                                                exit();
+                                                            } else {
+                                                                echo "<div class='alert alert-danger'>Incorrect password</div>";
+                                                            }
+                                                        } else {
+                                                            echo "<div class='alert alert-danger'>User not found</div>";
+                                                        }
+
+                                                        mysqli_stmt_close($stmt);
+                                                    } else {
+                                                        echo "<div class='alert alert-danger'>Database error</div>";
                                                     }
-                                                }else{
-                                                    echo "<div class='alert alert-danger'>Email does not match</div>";
+
+                                                    mysqli_close($conn);
                                                 }
-                                            }
-                                            ?>
-                                        <form action="login.php" method="post">
-                                            <div class="form__grp">
-                                                <input type="email" placeholder="Enter Email:" name="email" class="form-control">
-                                            </div>
-                                            <div class="form__grp">
-                                                <input type="password" placeholder="Enter Password:" name="password" class="form-control">
-                                            </div>
-                                            <div class="create__btn">
-                                                <input type="submit" style="width: 100%; border: none; color: #ffffff; font-size: 16px;" value="Login" name="login" class="cmn--btn">
-                                            </div>
-                                            <p>Not registered yet <a href="register.php">Register Here</a></p>
-                                        </form>
+                                                ?>
+
+                                                <!-- Login form -->
+                                                <form action="login.php" method="post">
+                                                    <div class="form__grp">
+                                                        <input type="email" placeholder="Enter Email:" name="email" class="form-control">
+                                                    </div>
+                                                    <div class="form__grp">
+                                                        <input type="password" placeholder="Enter Password:" name="password" class="form-control">
+                                                    </div>
+                                                    <div class="create__btn">
+                                                        <input type="submit" style="width: 100%; border: none; color: #ffffff; font-size: 16px;" value="Login" name="login" class="cmn--btn">
+                                                    </div>
+                                                    <p>Not registered yet <a href="register.php">Register Here</a></p>
+                                                </form>
                                         </div>
                                             </div>
                                         </div>

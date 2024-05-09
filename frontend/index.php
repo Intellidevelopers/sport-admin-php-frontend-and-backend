@@ -1,5 +1,9 @@
+<?php
+require_once "database.php";
 
-
+// Start session to access session variables
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,45 +75,43 @@
                     </div>
                     <ul class="main-menu">
                         <li>
-                            <a href="inbox.html">
+                            <a href="inbox.php">
                                 <span>Inbox</span>
                             </a>
                         </li>
                         <li>
-                            <a href="training.html">
+                            <a href="training.php">
                                 <span>Training</span>
                             </a>
                         </li>
                         <li>
-                            <a href="schedule.html">
+                            <a href="schedule.php">
                                 <span>Schedule</span>
                             </a>
                         </li>
                         <li>
-                            <a href="medical-center.html">
+                            <a href="medical-center.php">
                                 <span>Medical Center</span>
                             </a>
                         </li>
                         <li>
-                            <a href="scouting.html">
+                            <a href="scouting.php">
                                 <span>Scouting</span>
                             </a>
                         </li>
                         <li>
-                            <a href="tactics.html">
+                            <a href="tactics.php">
                                 <span>Tactics</span>
                             </a>
                         </li>
                         <li class="cmn-grp">
-                            <a href="signin.html" class="cmn--btn">
-                                <span class="rela">Sign In</span>
-                            </a>
-                            <a href="signin.html" class="cmn--btn2">
-                                <span class="rela">Sign Up</span>
-                            </a>
-                            <a href="logout.php" class="cmn--btn2">
-                                <span class="rela">Logout</span>
-                            </a>
+                       <?php if(isset($_SESSION['user_id'])): ?>
+        <a href="logout.php" class="cmn--btn2"><span class="rela">Logout</span></a>
+        <a href="dashboard.php" class="btn btn-primary"><span class="rela">Dashboard</span></a>
+    <?php else: ?>
+        <a href="login.php" class="cmn--btn"><span>Sign In</span></a>
+        <a href="register.php" class="cmn--btn2"><span class="rela">Sign Up</span></a>
+    <?php endif; ?>
                         </li>
                     </ul>
                 </div>
@@ -130,15 +132,15 @@
                             </option>
                         </select>
                     </div>
-                    <a href="signin.html" class="cmn--btn">
-                        <span>Sign In</span>
-                    </a>
-                    <a href="signin.html" class="cmn--btn2">
-                        <span class="rela">Sign Up</span>
-                    </a>
-                    <a href="logout.php" class="cmn--btn2">
-                        <span class="rela">Logout</span>
-                    </a>
+                    
+                    <?php if(isset($_SESSION['user_id'])): ?>
+        <a href="logout.php" class="cmn--btn2"><span class="rela">Logout</span></a>
+        <a href="dashboard.php" class="btn btn-primary"><span class="rela">Dashboard</span></a>
+    <?php else: ?>
+        <a href="login.php" class="cmn--btn"><span>Sign In</span></a>
+        <a href="register.php" class="cmn--btn2"><span class="rela">Sign Up</span></a>
+    <?php endif; ?>
+    
                 </div>
             </div>
         </div>
@@ -32618,9 +32620,21 @@ mysqli_close($conn);
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="signin.html" class="cmn--btn2">
-                                            <span>Sign In & Bet</span>
-                                        </a>
+                                        <!-- HTML structure for the betting section -->
+                                        <div class="betting-section">
+                                            <?php if(isset($_SESSION['user_id'])): ?>
+                                                <!-- User is logged in, display bet form or content -->
+                                                <a href="" class="cmn--btn2 text-white">
+                                                    <span class="rela">Place Bet</span>
+                                                </a>
+                                            <?php else: ?>
+                                                <!-- User is not logged in, display sign in & bet button -->
+                                                <a href="login.php" class="cmn--btn2">
+                                                    <span>Sign In & Bet</span>
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="tab-pane fade text-white" id="nav-contact" role="tabpanel"
@@ -32739,7 +32753,7 @@ mysqli_close($conn);
                 </a>
             </li>
             <li>
-                <a href="dashboard.html" class="d-grid justify-content-center">
+                <a href="dashboard.php" class="d-grid justify-content-center">
                     <span> <i class="far fa-user-circle"></i></span>
                     <span class="texta"> Account</span>
                 </a>

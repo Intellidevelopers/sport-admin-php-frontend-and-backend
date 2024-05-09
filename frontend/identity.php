@@ -1,7 +1,13 @@
+<?php
+
+    require '../config/function.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from pixner.net/sportsodds1/sportsbet/deposit.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:23:09 GMT -->
+<!-- Mirrored from pixner.net/sportsodds1/sportsbet/identity.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:35 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +43,7 @@
             <div class="header-wrapper">
                 <div class="menu__left__wrap">
                     <div class="logo-menu px-2">
-                        <a href="index.html" class="logo">
+                        <a href="../admin/uploads/" class="logo">
                             <img src="assets/img/logo/logo.png" alt="logo">
                         </a>
                     </div>
@@ -164,9 +170,9 @@
             <div class="row g-4">
                 <div class="col-xxl-3 col-xl-3 col-lg-4">
                     <div class="dashboard__side__bar">
-                        <ul class="account__menu">
+                    <ul class="account__menu">
                             <li>
-                                <a href="dashboard.html">
+                                <a href="dashboard.php">
                                     <span class="icons">
                                         <i class="icon-user"></i>
                                     </span>
@@ -176,7 +182,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact-preference.html">
+                                <a href="contact-preference.php">
                                     <span class="icons">
                                         <i class="icon-pcontact"></i>
                                     </span>
@@ -186,7 +192,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="identity.html">
+                                <a href="identity.php" class="active">
                                     <span class="icons">
                                         <i class="icon-details"></i>
                                     </span>
@@ -196,7 +202,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="verification.html">
+                                <a href="verification.php">
                                     <span class="icons">
                                         <i class="icon-verify"></i>
                                     </span>
@@ -206,7 +212,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="casinobet.html">
+                                <a href="casinobet.php">
                                     <span class="icons">
                                         <i class="icon-casino"></i>
                                     </span>
@@ -216,7 +222,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mypromo.html">
+                                <a href="mypromo.php">
                                     <span class="icons">
                                         <i class="icon-promos"></i>
                                     </span>
@@ -226,7 +232,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="deposit.html" class="active">
+                                <a href="deposit.php">
                                     <span class="icons">
                                         <i class="icon-deposit"></i>
                                     </span>
@@ -236,7 +242,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="withdraw.html">
+                                <a href="withdraw.php">
                                     <span class="icons">
                                         <i class="icon-withdraw"></i>
                                     </span>
@@ -246,7 +252,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="transaction.html">
+                                <a href="transaction.php">
                                     <span class="icons">
                                         <i class="icon-history"></i>
                                     </span>
@@ -256,7 +262,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="notification.html">
+                                <a href="notification.php">
                                     <span class="icons">
                                         <i class="icon-notifivation"></i>
                                     </span>
@@ -266,7 +272,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="bethistory.html">
+                                <a href="bethistory.php">
                                     <span class="icons">
                                         <i class="icon-bhistory"></i>
                                     </span>
@@ -276,7 +282,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="bonuses.html">
+                                <a href="bonuses.php">
                                     <span class="icons">
                                         <i class="icon-bonus"></i>
                                     </span>
@@ -286,7 +292,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#0">
+                                <a href="logout.php">
                                     <span class="icons">
                                         <i class="icon-logout"></i>
                                     </span>
@@ -295,187 +301,130 @@
                                     </span>
                                 </a>
                             </li>
-                        </ul>
+                        </ul> 
                     </div>
                 </div>
                 <div class="col-xxl-9 col-xl-9 col-lg-8">
                     <div class="dashboard__body__wrap">
                         <h3 class="account__head mb__30">
-                            Deposit
+                            Identity Details
                         </h3>
-                        <div class="payment__cart__check">
-                            <div class="row g-4">
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit1">
-                                        <label class="form-check-label" for="deposit1">
-                                            <img src="assets/img/profile/visa.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit2">
-                                        <label class="form-check-label" for="deposit2">
-                                            <img src="assets/img/profile/webpay.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit3">
-                                        <label class="form-check-label" for="deposit3">
-                                            <img src="assets/img/profile/skrill.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit4">
-                                        <label class="form-check-label" for="deposit4">
-                                            <img src="assets/img/profile/much.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit5">
-                                        <label class="form-check-label" for="deposit5">
-                                            <img src="assets/img/profile/neteller.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit6">
-                                        <label class="form-check-label" for="deposit6">
-                                            <img src="assets/img/profile/paypal.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit7">
-                                        <label class="form-check-label" for="deposit7">
-                                            <img src="assets/img/profile/bitcoin.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit8">
-                                        <label class="form-check-label" for="deposit8">
-                                            <img src="assets/img/profile/inovarav.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit9">
-                                        <label class="form-check-label" for="deposit9">
-                                            <img src="assets/img/profile/phonerpe.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit10">
-                                        <label class="form-check-label" for="deposit10">
-                                            <img src="assets/img/profile/coins.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit11">
-                                        <label class="form-check-label" for="deposit11">
-                                            <img src="assets/img/profile/yandex.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                                    <div class="payment__cart__items">
-                                        <input class="form-check-input" type="checkbox" id="deposit12">
-                                        <label class="form-check-label" for="deposit12">
-                                            <img src="assets/img/profile/visas.png" alt="visa">
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deposit__complate">
-                            <h3>
-                                Complete Your Deposit
-                            </h3>
-                            <div class="deposit__wallet">
-                                <div class="deopsit__wallet__items">
-                                    <p>
-                                        Deposit to Wallet
-                                    </p>
-                                    <div class="usd__chacnge">
-                                        <span>USD</span>
-                                        <div class="icons" id="profile-picture">
-                                            <i class="fas fa-pen"></i>
+                        <div class="identity__details bgbox">
+                            <h5 class="identity__title">
+                                About You
+                            </h5>
+                            <div class="identity__left mb-5">
+                                <?=  alertMessage(); ?>
+                                <form action="identity-code.php" method="post">
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="name">First Name (Given Name)</label>
+                                                <input type="text" id="first_name" name="first_name" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="name2">Last Name (Surname / Family Name)</label>
+                                                <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="deopsit__wallet__items">
-                                    <p>
-                                        Payment Provider
-                                    </p>
-                                    <div class="usd__chacnge">
-                                        <span><img src="assets/img/profile/bvisa.png" alt="vissa"></span>
-                                        <div class="icons" id="profile-picture2">
-                                            <i class="fas fa-pen"></i>
+                                   
+                                    <div class="row g-2">
+                                        <div class="col-lg-6">
+                                            <label for="dob">Date Of Birth</label>
+                                           <div class="row g-2">
+                                            <div class="col-lg-4">
+                                                <div class="form__box">
+                                                <input type="text" id="dob" name="date" placeholder="XX">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form__box">
+                                                    <input type="text" name="month" placeholder="XX">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form__box">
+                                                <input type="text" name="year" placeholder="XXXX">
+                                                </div>
+                                            </div>
+                                           </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="dob">Phone Number</label>
+                                            <div class="row g-2">
+                                                <div class="col-lg-4">
+                                                    <div class="form__box">
+                                                        <input type="text" value="+234" readonly>
+                                                        </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="form__box">
+                                                        <input type="number" name="phone" placeholder="XXXXXXXX">
+                                                        </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="promo__code">
-                                <span class="promo">
-                                    Promo Code
-                                </span>
-                                <a href="#0">
-                                    <span>Enter Code</span>
-                                    <span><i class="fas fa-plus"></i></span>
-                                </a>
-                            </div>
-                            <a href="#0" class="visa__card">
-                                <img src="assets/img/profile/visap.png" alt="visa">
-                            </a>
-                            <ul class="quick-value">
-                                <li><h5 class="active">20</h5></li>
-                                <li><h5>30</h5></li>
-                                <li><h5>100</h5></li>
-                                <li>
-                                    <a href="#0">
-                                        Custom
-                                    </a>
-                                </li>
-                            </ul>
-                            <form action="#">
-                                <div class="single-input mb__20">
-                                    <input type="text" id="dAmount" placeholder="Enter Amount" value="$20.00" autocomplete="off">
-                                </div>
-                                <div class="single-input">
-                                    <input type="text" id="eemail" placeholder="Email" autocomplete="off">
-                                </div>
-                                <div class="total__amount">
-                                    <div class="items">
-                                        <span>Amount Fee</span>
-                                        <span>$20</span>
+                                        <br>
+                                    <h5 class="identity__title mb-1">
+                                        Address
+                                    </h5>
+                                    <div class="identity__left mb-3">
+                                    <div class="row g-3">
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add1">Address</label>
+                                                <input type="text" name="address" id="add1" placeholder="XXXXX">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add2">Apt, Suite, etc</label>
+                                                <input type="text" name="apartment" id="add2" placeholder="XXXXX">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add3">City / Region</label>
+                                                <input type="text" name="city" id="add3" placeholder="XXXXX">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add4">Country</label>
+                                                <input type="text" name="country" id="add4" placeholder="United Kingdom">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add5">State / Province</label>
+                                                <input type="text" name="state" id="add5" placeholder="XXXXX">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form__box">
+                                                <label for="add6">Postal Code</label>
+                                                <input type="text" name="postal" id="add6" placeholder="XXXX">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="items">
-                                        <span>Total</span>
-                                        <span>$20</span>
-                                    </div>
+                                 </div>
+                                <div class="authorize__wrap">
+                                    <input class="form-check-input" type="checkbox" value="" id="aut1" checked>
+                                    <label class="form-check-label" for="aut1">
+                                        I authorize SportOdds to collect and transmit my personal information for identity verification or <span>similar uses as defined</span> in order to confirm my ability to use the website.
+                                    </label>
                                 </div>
-                                <div class="btn-area">
-                                    <button class="cmn--btn">
-                                        <span>Deposit</span>
-                                    </button>
+                                <div class="save__btn mt-3 d-flex text-white">
+                                    <button type="submit" name="save" class="cmn--btn text-whitec:\xampp\htdocs\hexa-cleaning-company\payment">Save</button>
                                 </div>
-                            </form>
+                                </form>
+                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -1405,5 +1354,5 @@
     
 </body>
 
-<!-- Mirrored from pixner.net/sportsodds1/sportsbet/deposit.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:30 GMT -->
+<!-- Mirrored from pixner.net/sportsodds1/sportsbet/identity.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:35 GMT -->
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from pixner.net/sportsodds1/sportsbet/identity.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:35 GMT -->
+<!-- Mirrored from pixner.net/sportsodds1/sportsbet/deposit.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:23:09 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,7 +37,7 @@
             <div class="header-wrapper">
                 <div class="menu__left__wrap">
                     <div class="logo-menu px-2">
-                        <a href="../admin/uploads/" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="assets/img/logo/logo.png" alt="logo">
                         </a>
                     </div>
@@ -186,7 +186,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="identity.html" class="active">
+                                <a href="identity.html">
                                     <span class="icons">
                                         <i class="icon-details"></i>
                                     </span>
@@ -226,7 +226,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="deposit.html">
+                                <a href="deposit.html" class="active">
                                     <span class="icons">
                                         <i class="icon-deposit"></i>
                                     </span>
@@ -301,124 +301,79 @@
                 <div class="col-xxl-9 col-xl-9 col-lg-8">
                     <div class="dashboard__body__wrap">
                         <h3 class="account__head mb__30">
-                            Identity Details
+                            Deposit
                         </h3>
-                        <div class="identity__details bgbox">
-                            <h5 class="identity__title">
-                                About You
-                            </h5>
-                            <div class="identity__left mb-5">
-                                <form action="#">
-                                    <div class="row g-2 mb-3">
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="name">First Name (Given Name)</label>
-                                                <input type="text" id="name" placeholder="First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="name2">Last Name (Surname / Family Name)</label>
-                                                <input type="text" id="name2" placeholder="Last Name">
-                                            </div>
+                            
+                        <div class="deposit__complate">
+                            <h3>
+                                Complete Your Deposit
+                            </h3>
+                            <div class="deposit__wallet">
+                                <div class="deopsit__wallet__items">
+                                    <p>
+                                        Deposit to Wallet
+                                    </p>
+                                    <div class="usd__chacnge">
+                                        <span>NGN</span>
+                                        <div class="icons" id="profile-picture">
+                                            <i class="fas fa-pen"></i>
                                         </div>
                                     </div>
-                                   
-                                    <div class="row g-2">
-                                        <div class="col-lg-6">
-                                            <label for="dob">Date Of Birth</label>
-                                           <div class="row g-2">
-                                            <div class="col-lg-4">
-                                                <div class="form__box">
-                                                <input type="text" id="dob" placeholder="XX">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form__box">
-                                                    <input type="text" placeholder="XX">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="form__box">
-                                                <input type="text" placeholder="XXXX">
-                                                </div>
-                                            </div>
-                                           </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <label for="dob">Phone Number</label>
-                                            <div class="row g-2">
-                                                <div class="col-lg-4">
-                                                    <div class="form__box">
-                                                        <input type="text" placeholder="+962">
-                                                        </div>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <div class="form__box">
-                                                        <input type="number" placeholder="XXXXXXXX">
-                                                        </div>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="deopsit__wallet__items">
+                                    <p>
+                                        Payment Provider
+                                    </p>
+                                    <div class="usd__chacnge">
+                                        <span><img src="assets/img/profile/bvisa.png" alt="vissa"></span>
+                                        <div class="icons" id="profile-picture2">
+                                            <i class="fas fa-pen"></i>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
-                            <h5 class="identity__title">
-                                Address
-                            </h5>
-                            <div class="identity__left mb-3">
-                                <form action="#">
-                                    <div class="row g-3">
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add1">Address</label>
-                                                <input type="text" id="add1" placeholder="XXXXX">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add2">Apt, Suite, etc</label>
-                                                <input type="text" id="add2" placeholder="XXXXX">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add3">City / Region</label>
-                                                <input type="text" id="add3" placeholder="XXXXX">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add4">Country</label>
-                                                <input type="text" id="add4" placeholder="United Kingdom">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add5">State / Province</label>
-                                                <input type="text" id="add5" placeholder="XXXXX">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form__box">
-                                                <label for="add6">Postal Code</label>
-                                                <input type="text" id="add6" placeholder="XXXX">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="authorize__wrap">
-                                <input class="form-check-input" type="checkbox" value="" id="aut1" checked>
-                                <label class="form-check-label" for="aut1">
-                                    I authorize SportOdds to collect and transmit my personal information for identity verification or <span>similar uses as defined</span> in order to confirm my ability to use the website.
-                                </label>
-                            </div>
-                            <div class="save__btn mt-3 d-flex">
-                                <a href="#0" class="cmn--btn">
-                                    <span>Save</span>
+                            <div class="promo__code">
+                                <span class="promo">
+                                    Promo Code
+                                </span>
+                                <a href="#0">
+                                    <span>Enter Code</span>
+                                    <span><i class="fas fa-plus"></i></span>
                                 </a>
                             </div>
+                            <a href="#0" class="visa__card">
+                                <img src="assets/img/profile/visap.png" alt="visa">
+                            </a>
+                            <ul class="quick-value">
+                                <li><h5 class="active">1000</h5></li>
+                                <li><h5>5000</h5></li>
+                                <li><h5>10,000</h5></li>
+                                <li>
+                                    <a href="#0">
+                                        Custom
+                                    </a>
+                                </li>
+                            </ul>
+                            <form action="./payment/api.js" id="paymentForm">
+                                <div class="single-input mb__20">
+                                    <input type="text" id="amount" placeholder="Enter Amount" value="NGN" autocomplete="off">
+                                </div>
+                                <div class="total__amount">
+                                    <div class="items">
+                                        <span>Amount Fee</span>
+                                        <span>1000</span>
+                                    </div>
+                                    <div class="items">
+                                        <span>Total</span>
+                                        <span>$20</span>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button onclick="payWithPaystack()" class="cmn--btn">
+                                        <span>Deposit</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1326,7 +1281,79 @@
     </div>
     <!--MyBets End-->
 
+    <script>
+        // Selecting form and input elements
+const form = document.querySelector("form");
+const passwordInput = document.getElementById("password");
+const passToggleBtn = document.getElementById("pass-toggle-btn");
 
+// Function to display error messages
+const showError = (field, errorText) => {
+    field.classList.add("error");
+    const errorElement = document.createElement("small");
+    errorElement.classList.add("error-text");
+    errorElement.innerText = errorText;
+    field.closest(".form-group").appendChild(errorElement);
+}
+
+// Function to handle form submission
+const handleFormData = (e) => {
+    e.preventDefault();
+
+    // Retrieving input elements
+    const fullnameInput = document.getElementById("fullname");
+    const emailInput = document.getElementById("email");
+    const dateInput = document.getElementById("date");
+    const genderInput = document.getElementById("gender");
+
+    // Getting trimmed values from input fields
+    const fullname = fullnameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+    const date = dateInput.value;
+    const gender = genderInput.value;
+
+    // Regular expression pattern for email validation
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    // Clearing previous error messages
+    document.querySelectorAll(".form-group .error").forEach(field => field.classList.remove("error"));
+    document.querySelectorAll(".error-text").forEach(errorText => errorText.remove());
+
+    // Performing validation checks
+    if (fullname === "") {
+        showError(fullnameInput, "Enter your full name");
+    }
+    if (!emailPattern.test(email)) {
+        showError(emailInput, "Enter a valid email address");
+    }
+    if (password === "") {
+        showError(passwordInput, "Enter your password");
+    }
+    if (date === "") {
+        showError(dateInput, "Select your date of birth");
+    }
+    if (gender === "") {
+        showError(genderInput, "Select your gender");
+    }
+
+    // Checking for any remaining errors before form submission
+    const errorInputs = document.querySelectorAll(".form-group .error");
+    if (errorInputs.length > 0) return;
+
+    // Submitting the form
+    form.submit();
+}
+
+// Toggling password visibility
+passToggleBtn.addEventListener('click', () => {
+    passToggleBtn.className = passwordInput.type === "password" ? "fa-solid fa-eye-slash" : "fa-solid fa-eye";
+    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+});
+
+// Handling form submission event
+form.addEventListener("submit", handleFormData);
+    </script>
     <!--Jquery min js-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!--Bootstrap bundle min js-->
@@ -1346,7 +1373,9 @@
     <!--Main js-->
     <script src="assets/js/main.js"></script>
     
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+    
 </body>
 
-<!-- Mirrored from pixner.net/sportsodds1/sportsbet/identity.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:35 GMT -->
+<!-- Mirrored from pixner.net/sportsodds1/sportsbet/deposit.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:30 GMT -->
 </html>

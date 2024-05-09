@@ -1,3 +1,9 @@
+<?php
+require_once "database.php";
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,43 +43,43 @@
             <div class="header-wrapper">
                 <div class="menu__left__wrap">
                     <div class="logo-menu px-2">
-                        <a href="index.html" class="logo">
+                        <a href="index.php" class="logo">
                             <img src="assets/img/logo/logo.png" alt="logo">
                         </a>
                     </div>
                     <ul class="main-menu">
-                        <li>
-                            <a href="lives.html">
-                                <span>Live</span>
+                    <li>
+                            <a href="inbox.php">
+                                <span>Inbox</span>
                             </a>
                         </li>
                         <li>
-                            <a href="sportsbetting.html">
-                                <span>Sports Betting</span>
+                            <a href="training.php">
+                                <span>Training</span>
                             </a>
                         </li>
                         <li>
-                            <a href="casino.html" class="active">
-                                <span>Casino</span>
+                            <a href="schedule.php">
+                                <span>Schedule</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#lucky">
-                                <span>Lucky Drops</span>
+                            <a href="medical-center.php">
+                                <span>Medical Center</span>
                             </a>
                         </li>
                         <li>
-                            <a href="livecasino.html">
-                                <span>Live Casino</span>
+                            <a href="scouting.php">
+                                <span>Scouting</span>
                             </a>
                         </li>
                         <li>
-                            <a href="promotions.html">
-                                <span>Promotions</span>
+                            <a href="tactics.php">
+                                <span>Tactics</span>
                             </a>
                         </li>
                         <li class="cmn-grp">
-                            <a href="deposit.html">
+                            <a href="./payment/index.php">
                                 <span class="cmn--btn">
                                     <span class="rela">Deposit</span>
                                 </span>
@@ -84,10 +90,10 @@
                 <div class="dashboar__wrap">
                     <div class="items d__text">
                         <span class="small">Your balance</span>
-                        <h6>$9.22</h6>
+                        <h6>NGN9,000</h6>
                     </div>
                     <div class="items d__cmn">
-                        <a href="#0" class="cmn--btn">
+                        <a href="./payment/index.php" class="cmn--btn">
                             <span>Deposit</span>
                         </a>
                     </div>
@@ -134,7 +140,7 @@
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="#0" class="custom-dropdown__body-link">
+                                    <a href="logout.php" class="custom-dropdown__body-link">
                                       <span class="custom-dropdown__body-icon">
                                         <i class="fas fa-sign-out-alt"></i>
                                       </span>
@@ -168,7 +174,7 @@
                     <div class="dashboard__side__bar">
                         <ul class="account__menu">
                             <li>
-                                <a href="dashboard.html" class="active">
+                                <a href="dashboard.php" class="active">
                                     <span class="icons">
                                         <i class="icon-user"></i>
                                     </span>
@@ -178,7 +184,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="contact-preference.html">
+                                <a href="contact-preference.php">
                                     <span class="icons">
                                         <i class="icon-pcontact"></i>
                                     </span>
@@ -188,7 +194,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="identity.html">
+                                <a href="identity.php">
                                     <span class="icons">
                                         <i class="icon-details"></i>
                                     </span>
@@ -198,7 +204,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="verification.html">
+                                <a href="verification.php">
                                     <span class="icons">
                                         <i class="icon-verify"></i>
                                     </span>
@@ -208,7 +214,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="casinobet.html">
+                                <a href="casinobet.php">
                                     <span class="icons">
                                         <i class="icon-casino"></i>
                                     </span>
@@ -218,7 +224,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mypromo.html">
+                                <a href="mypromo.php">
                                     <span class="icons">
                                         <i class="icon-promos"></i>
                                     </span>
@@ -228,7 +234,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="deposit.html">
+                                <a href="deposit.php">
                                     <span class="icons">
                                         <i class="icon-deposit"></i>
                                     </span>
@@ -238,7 +244,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="withdraw.html">
+                                <a href="withdraw.php">
                                     <span class="icons">
                                         <i class="icon-withdraw"></i>
                                     </span>
@@ -248,7 +254,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="transaction.html">
+                                <a href="transaction.php">
                                     <span class="icons">
                                         <i class="icon-history"></i>
                                     </span>
@@ -258,7 +264,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="notification.html">
+                                <a href="notification.php">
                                     <span class="icons">
                                         <i class="icon-notifivation"></i>
                                     </span>
@@ -268,7 +274,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="bethistory.html">
+                                <a href="bethistory.php">
                                     <span class="icons">
                                         <i class="icon-bhistory"></i>
                                     </span>
@@ -278,7 +284,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="bonuses.html">
+                                <a href="bonuses.php">
                                     <span class="icons">
                                         <i class="icon-bonus"></i>
                                     </span>
@@ -288,7 +294,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#0">
+                                <a href="logout.php">
                                     <span class="icons">
                                         <i class="icon-logout"></i>
                                     </span>
@@ -300,6 +306,55 @@
                         </ul> 
                     </div>
                 </div>
+                <?php
+                // Check if user is logged in
+                if (!isset($_SESSION["user_id"])) {
+                    header("Location: login.php");
+                    exit();
+                }
+
+                require_once "database.php"; // Include your database connection file
+
+                // Retrieve user ID from session
+                $userId = $_SESSION["user_id"];
+
+                // Function to get user details by ID from the database
+                function getUserById($userId) {
+                    global $conn;
+
+                    $user = null;
+
+                    // Prepare and execute query to fetch user by ID
+                    $query = "SELECT * FROM users WHERE id = ?";
+                    $stmt = mysqli_prepare($conn, $query);
+
+                    if ($stmt) {
+                        mysqli_stmt_bind_param($stmt, "i", $userId);
+                        mysqli_stmt_execute($stmt);
+
+                        $result = mysqli_stmt_get_result($stmt);
+
+                        if ($result && mysqli_num_rows($result) > 0) {
+                            $user = mysqli_fetch_assoc($result);
+                        }
+
+                        mysqli_stmt_close($stmt);
+                    }
+
+                    return $user;
+                }
+
+                // Get user details by ID
+                $user = getUserById($userId);
+
+                // Display user details if user exists
+                if ($user) {
+                    // Format last login time
+                    $lastLoginTimestamp = strtotime($user['last_login']);
+                    $formattedLastLogin = date('l jS Y', $lastLoginTimestamp);
+                    
+                    // Display user information
+                    ?>
                 <div class="col-xxl-9 col-xl-9 col-lg-8">
                     <div class="dashboard__body__wrap">
                         <h3 class="account__head mb__30">
@@ -315,7 +370,7 @@
                                         </div>
                                     </div>
                                     <div class="user__content">
-                                        <h5 class="usertext__one">princejboy123</h5>
+                                        <h5 class="usertext__one"><?= $user['full_name']; ?></h5>
                                         <h6 class="usertext__two">UUID:</h6>
                                         <a href="#0" class="link">
                                             ffbe99f2-7f4b-11ed-9e24-3ee8038fe302
@@ -332,7 +387,7 @@
                                     <div class="user__dated">
                                         <span class="date">Joined April 4th, 2024</span>
                                         <a href="#0" class="lastlogin">
-                                            Last Login on
+                                            Last Login on: <?php echo $user['last_login']; ?>
                                         </a>
                                     </div>
                                 </div>
@@ -517,14 +572,27 @@
                                         <p>
                                             Want to temporarily close your account?
                                         </p>
-                                        <a href="#0" class="cmn--btn">
-                                            <span>Archive Account</span>
-                                        </a>
+                                        <!-- HTML button to delete account -->
+                                        <!-- HTML button to delete account -->
+                                        <!-- HTML button to delete account -->
+                                        <form action="delete_account.php" method="post">
+                                            <button type="submit" class="cmn--btn" name="delete_account" onclick="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
+                                                Delete Account
+                                            </button>
+                                        </form>
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <?php
+} else {
+    echo "<p>User not found</p>";
+}
+
+mysqli_close($conn);
+?>             </div>
                 </div>
             </div>
         </div>
@@ -1449,7 +1517,8 @@
     <script src="assets/js/api.js"></script>
     <!--Main js-->
     <script src="assets/js/main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </body>
 
 <!-- Mirrored from pixner.net/sportsodds1/sportsbet/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Apr 2024 20:25:35 GMT -->

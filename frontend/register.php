@@ -173,79 +173,96 @@
                                             
                                             <div class="form__tabs__wrap">
                                             <div class="container">
-        <?php
-        if (isset($_POST["submit"])) {
-           $fullName = $_POST["fullname"];
-           $email = $_POST["email"];
-           $password = $_POST["password"];
-           $passwordRepeat = $_POST["repeat_password"];
-           
-          // $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                                            <?php
+                                            if (isset($_POST["submit"])) {
+                                                $fullName = $_POST["fullname"];
+                                                $email = $_POST["email"];
+                                                $password = $_POST["password"];
+                                                $passwordRepeat = $_POST["repeat_password"];
 
-           $errors = array();
-           
-           if (empty($fullName) OR empty($email) OR empty($password) OR empty($passwordRepeat)) {
-            array_push($errors,"All fields are required");
-           }
-           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($errors, "Email is not valid");
-           }
-           if (strlen($password)<8) {
-            array_push($errors,"Password must be at least 8 charactes long");
-           }
-           if ($password!==$passwordRepeat) {
-            array_push($errors,"Password does not match");
-           }
-           require_once "database.php";
-           $sql = "SELECT * FROM users WHERE email = '$email'";
-           $result = mysqli_query($conn, $sql);
-           $rowCount = mysqli_num_rows($result);
-           if ($rowCount>0) {
-            array_push($errors,"Email already exists!");
-           }
-           if (count($errors)>0) {
-            foreach ($errors as  $error) {
-                echo "<div class='alert alert-danger'>$error</div>";
-            }
-           }else{
-            
-            $sql = "INSERT INTO users (full_name, email, password) VALUES ( ?, ?, ? )";
-            $stmt = mysqli_stmt_init($conn);
-            $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
-            if ($prepareStmt) {
-                mysqli_stmt_bind_param($stmt,"sss",$fullName, $email, $passwordHash);
-                mysqli_stmt_execute($stmt);
-                echo "<div class='alert alert-success'>You are registered successfully.</div>";
-            }else{
-                die("Something went wrong");
-            }
-           }
-          
+                                                $errors = array();
 
-        }
-        ?>
-        <form action="register.php" method="post">
-            <div class="form__grp">
-                <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
-            </div>
-            <div class="form__grp">
-                <input type="emamil" class="form-control" name="email" placeholder="Email:">
-            </div>
-            <div class="form__grp">
-                <input type="password" class="form-control" name="password" placeholder="Password:">
-            </div>
-            <div class="form__grp">
-                <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password:">
-            </div>
-            <div class="create__btn">
-                <input type="submit" class="cmn--btn" style="width: 100%; border: none; color: #ffffff; font-size: 16px;" value="Register" name="submit">
-            </div>
-            <p>Already Registered <a href="login.php">Login Here</a></p>
-        </form>
-        <div>
-      </div>
-    </div>
-    </div>
+                                                // Validate input fields
+                                                if (empty($fullName) || empty($email) || empty($password) || empty($passwordRepeat)) {
+                                                    $errors[] = "All fields are required";
+                                                }
+
+                                                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                                    $errors[] = "Email is not valid";
+                                                }
+
+                                                if (strlen($password) < 8) {
+                                                    $errors[] = "Password must be at least 8 characters long";
+                                                }
+
+                                                if ($password !== $passwordRepeat) {
+                                                    $errors[] = "Passwords do not match";
+                                                }
+
+                                                // Check if email already exists
+                                                require_once "database.php";
+                                                $sql = "SELECT * FROM users WHERE email = ?";
+                                                $stmt = mysqli_stmt_init($conn);
+
+                                                if (mysqli_stmt_prepare($stmt, $sql)) {
+                                                    mysqli_stmt_bind_param($stmt, "s", $email);
+                                                    mysqli_stmt_execute($stmt);
+                                                    $result = mysqli_stmt_get_result($stmt);
+                                                    if (mysqli_num_rows($result) > 0) {
+                                                        $errors[] = "Email already exists";
+                                                    }
+                                                }
+
+                                                // If no errors, proceed with registration
+                                                if (empty($errors)) {
+                                                    // Hash the password
+                                                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+                                                    // Insert user into database
+                                                    $sql = "INSERT INTO users (full_name, email, password) VALUES (?, ?, ?)";
+                                                    $stmt = mysqli_stmt_init($conn);
+
+                                                    if (mysqli_stmt_prepare($stmt, $sql)) {
+                                                        mysqli_stmt_bind_param($stmt, "sss", $fullName, $email, $passwordHash);
+                                                        mysqli_stmt_execute($stmt);
+                                                        echo "<div class='alert alert-success'>You are registered successfully.</div>";
+                                                    } else {
+                                                        echo "<div class='alert alert-danger'>Something went wrong. Please try again later.</div>";
+                                                    }
+                                                } else {
+                                                    // Display validation errors
+                                                    foreach ($errors as $error) {
+                                                        echo "<div class='alert alert-danger'>$error</div>";
+                                                    }
+                                                }
+
+                                                // Close database connection
+                                                mysqli_stmt_close($stmt);
+                                                mysqli_close($conn);
+                                            }
+                                            ?>
+                                            <form action="register.php" method="post">
+                                                <div class="form__grp">
+                                                    <input type="text" class="form-control" name="fullname" placeholder="Full Name" value="<?php echo isset($_POST['fullname']) ? $_POST['fullname'] : ''; ?>">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="email" class="form-control" name="email" placeholder="Email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : ''; ?>">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password">
+                                                </div>
+                                                <div class="create__btn">
+                                                    <input type="submit" class="cmn--btn" style="width: 100%; border: none; color: #ffffff; font-size: 16px;" value="Register" name="submit">
+                                                </div>
+                                                <p>Already Registered? <a href="login.php">Login Here</a></p>
+                                            </form>
+                                                    <div>
+                                                </div>
+                                                </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
