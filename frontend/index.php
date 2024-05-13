@@ -4,6 +4,40 @@ require_once "database.php";
 // Start session to access session variables
 session_start();
 ?>
+
+<?php
+
+// Adding new visitor
+$visitor_ip=$_SERVER['REMOTE_ADDR'];
+
+
+// CHECKING IF VISITOR IS UNIQUE
+$query="SELECT * FROM counter WHERE ip_address='$visitor_ip'";
+$result=mysqli_query($conn, $query);
+
+
+// Checking query error
+if(!$result) {
+    die("Retrieving Query Error<br>".$query);
+}
+$total_visitors=mysqli_num_rows($result);
+if($total_visitors<1){
+  $query="INSERT INTO counter(ip_address) VALUES('$visitor_ip')";
+  $result=mysqli_query($conn, $query);
+}
+
+// Retrieving exisiting visitors
+$query="SELECT * FROM counter";
+$result=mysqli_query($conn, $query);
+
+
+// Checking query error
+if(!$result) {
+    die("Retrieving Query Error");
+}
+$total_visitors=mysqli_num_rows($result);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

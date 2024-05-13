@@ -98,3 +98,23 @@ if(isset($_POST['saveSeller'])) {
        redirect('create-seller.php', 'Please fill all the input fields');
     }
 }
+
+// Top Up Acccount Balance
+if(isset($_POST['topUp'])) {
+    $amount = validate($_POST['amount']);
+
+    if($amount != '') {
+        $query = "INSERT INTO users (amount) 
+                    VALUE ('$amount')";
+        $result = mysqli_query($conn, $query);
+
+        if($result){
+            redirect('user-profile.php','Account Top Up Successfully');
+        }else{
+            redirect('user-profile.php','Something Went Wrong');
+        }
+    }
+    else{
+       redirect('user-profile.php','Please fill all the inputs fields');
+    }
+}

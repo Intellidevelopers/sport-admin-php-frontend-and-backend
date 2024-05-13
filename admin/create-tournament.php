@@ -975,7 +975,7 @@
             <div class="nav-item">
               <a class="nav-link active" href="index.php">
                 <i class="bi-house-door nav-icon"></i>
-                <span class="nav-link-title">Dashboards</span>
+                <span class="nav-link-title">Dashboard</span>
               </a>
             </div>
             <!-- End Collapse -->
@@ -1021,7 +1021,7 @@
               <div class="nav-item">
                 <a class="nav-link" href="leaderboard.php">
                   <i class="bi-stickies nav-icon"></i>
-                  <span class="nav-link-title">Leaderboardd</span>
+                  <span class="nav-link-title">Leaderboard</span>
                 </a>
               </div>
               <!-- End Collapse -->

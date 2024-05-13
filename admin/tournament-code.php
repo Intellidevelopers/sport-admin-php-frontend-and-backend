@@ -22,10 +22,10 @@ if(isset($_POST['createTournament'])) {
         if(move_uploaded_file($_FILES['logo_1']['tmp_name'], $target_file_1)) {
             // Image uploaded successfully for logo_1
         } else {
-            redirect('create_tournament.php', 'Failed to upload logo 1');
+            redirect('create-tournament.php', 'Failed to upload logo 1');
         }
     } else {
-        redirect('create_tournament.php', 'Logo 1 file is not an image');
+        redirect('create-tournament.php', 'Logo 1 file is not an image');
     }
 
     // Image upload for logo_2
@@ -39,10 +39,10 @@ if(isset($_POST['createTournament'])) {
         if(move_uploaded_file($_FILES['logo_2']['tmp_name'], $target_file_2)) {
             // Image uploaded successfully for logo_2
         } else {
-            redirect('create_tournament.php', 'Failed to upload logo 2');
+            redirect('create-tournament.php', 'Failed to upload logo 2');
         }
     } else {
-        redirect('create_tournament.php', 'Logo 2 file is not an image');
+        redirect('create-tournament.php', 'Logo 2 file is not an image');
     }
 
     // Insert into database after both images are uploaded
@@ -53,9 +53,53 @@ if(isset($_POST['createTournament'])) {
     if($result) {
         redirect('tournament.php', 'Tournament Added Successfully');
     } else {
-        redirect('create_tournament.php', 'Something Went Wrong');
+        redirect('create-tournament.php', 'Something Went Wrong');
     }
 } else {
-    redirect('create_tournament.php', 'Please fill all the input fields');
+    redirect('create-tournament.php', 'Please fill all the input fields');
 }
-?>
+
+
+// Update Tournament
+if (isset($_POST["updateTournament"])) {
+    // Retrieve form data
+    $tournamentId = $_POST["userId"];
+    $title = $_POST["title"];
+    $club_1 = $_POST["club_1"];
+    $club_2 = $_POST["club_2"];
+    $result_1 = $_POST["result_1"];
+    $result_2 = $_POST["result_2"];
+    $result_3 = $_POST["result_3"];
+
+    // Handle image uploads
+    $logo_1 = $_FILES["logo_1"]["name"];
+    $logo_2 = $_FILES["logo_2"]["name"];
+    $logo_1_tmp = $_FILES["logo_1"]["tmp_name"];
+    $logo_2_tmp = $_FILES["logo_2"]["tmp_name"];
+
+
+    // Update tournament details in the database
+    $sql = "UPDATE tournament SET title=?, club_1=?, club_2=?, result_1=?, result_2=?, result_3=?, logo_1=?, logo_2=? WHERE id=?";
+    $stmt = mysqli_stmt_init($conn);
+
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "ssssssssi", $title, $club_1, $club_2, $result_1, $result_2, $result_3, $logo_1, $logo_2, $tournamentId);
+
+        // Move uploaded files to desired directory (e.g., 'uploads/')
+        move_uploaded_file($logo_1_tmp, "uploads/" . $logo_1);
+        move_uploaded_file($logo_2_tmp, "uploads/" . $logo_2);
+
+        // Execute the update statement
+        if (mysqli_stmt_execute($stmt)) {
+            echo "<div class='alert alert-success'>Tournament updated successfully.</div>";
+        } else {
+            echo "<div class='alert alert-danger'>Error updating tournament. Please try again.</div>";
+        }
+
+        mysqli_stmt_close($stmt);
+    } else {
+        echo "<div class='alert alert-danger'>Database error. Please try again.</div>";
+    }
+
+    mysqli_close($conn); // Close database connection
+}

@@ -975,7 +975,7 @@
             <div class="nav-item">
               <a class="nav-link active" href="index.php">
                 <i class="bi-house-door nav-icon"></i>
-                <span class="nav-link-title">Dashboards</span>
+                <span class="nav-link-title">Dashboard</span>
               </a>
             </div>
             <!-- End Collapse -->
@@ -1021,7 +1021,7 @@
               <div class="nav-item">
                 <a class="nav-link" href="leaderboard.php">
                   <i class="bi-stickies nav-icon"></i>
-                  <span class="nav-link-title">Leaderboardd</span>
+                  <span class="nav-link-title">Leaderboard</span>
                 </a>
               </div>
               <!-- End Collapse -->
@@ -1512,6 +1512,7 @@
                 <th class="table-column-ps-0">Name</th>
                 <th>Email</th>
                 <th>Status</th>
+                <th>Balance</th>
                 <th>Profile</th>
                 <th></th>
               </tr>
@@ -1519,69 +1520,79 @@
 
             <tbody>
             <?php 
-              $users = getAll('users');
-              if(mysqli_num_rows($users) > 0){
-                  foreach($users as $userItem){
-            ?>
-              <tr>
-                <td class="table-column-pe-0">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll1">
-                    <label class="form-check-label" for="datatableCheckAll1"></label>
-                  </div>
-                </td>
-                <td class="table-column-ps-0">
-                  <a class="d-flex align-items-center" href="user-profile.php?id=<?= $userItem['id']; ?>">
-                    <div class="avatar avatar-circle">
-                      <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
-                    </div>
-                    <div class="ms-3">
-                      <span class="d-block h5 text-inherit mb-0"><?= $userItem['full_name']; ?> <i class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></span>
-                      <span class="d-block fs-5 text-body"><?= $userItem['created_date']; ?></span>
-                    </div>
-                  </a>
-                </td>
-                <td>
-                  <span class="d-block h5 mb-0"><?= $userItem['email']; ?></span>
-                </td>
-                
-                <td>
-                  <span class="legend-indicator bg-success"></span>Active
-                </td>
-                <td>
-                  <div class="d-flex align-items-center">
-                    <span class="fs-5 me-2">72%</span>
-                    <div class="progress table-progress">
-                      <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </td>
-                
-                <td>
-                  <a href="user-edit.php?id=<?= $userItem['id']; ?>">
-                  <button type="button" class="btn btn-white btn-sm">
+    $users = getAll('users');
+    if(mysqli_num_rows($users) > 0){
+        foreach($users as $userItem){
+?>
+    <tr>
+        <td class="table-column-pe-0">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll1">
+                <label class="form-check-label" for="datatableCheckAll1"></label>
+            </div>
+        </td>
+        <td class="table-column-ps-0">
+            <a class="d-flex align-items-center" href="user-profile.php?id=<?= $userItem['id']; ?>">
+                <div class="avatar avatar-circle">
+                    <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                </div>
+                <div class="ms-3">
+                    <span class="d-block h5 text-inherit mb-0"><?= $userItem['full_name']; ?> <i class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></span>
+                    <span class="d-block fs-5 text-body"><?= $userItem['created_date']; ?></span>
+                </div>
+            </a>
+        </td>
+        <td>
+            <span class="d-block h5 mb-0"><?= $userItem['email']; ?></span>
+        </td>
+        
+        <td>
+            <?php if($userItem['status'] == 1): ?>
+                <p><a href="status.php?d_id=<?= $userItem['id']; ?>&status=0"> Active </a></p>
+            <?php else: ?>
+                <p><a href="status.php?d_id=<?= $userItem['id']; ?>&status=1"> Inactive </a></p>
+            <?php endif; ?>
+        </td>
+
+        <td>
+            <span class="d-block h5 mb-0">₦<?= $userItem['amount']; ?></span>
+        </td>
+        
+        <td>
+            <div class="d-flex align-items-center">
+                <span class="fs-5 me-2">72%</span>
+                <div class="progress table-progress">
+                    <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </td>
+        
+        <td>
+            <a href="user-edit.php?id=<?= $userItem['id']; ?>">
+                <button type="button" class="btn btn-white btn-sm">
                     <i class="bi-pencil-fill me-1"></i> Edit
-                  </button>
-                </a>
-                <a href="user-delete.php?id=<?= $userItem['id']; ?>">
-                  <button type="button" class="btn btn-white btn-sm delete-btn" data-id="<?= $userItem['id']; ?>">
+                </button>
+            </a>
+            <a href="user-delete.php?id=<?= $userItem['id']; ?>">
+                <button type="button" class="btn btn-white btn-sm delete-btn" data-id="<?= $userItem['id']; ?>">
                     <i class="bi-trash-fill me-1"></i> Delete
-                  </button>
-                </a>
-                </td>
-              </tr>
-              <?php
-                  }
-              }else{
-                  ?>
-                  <tr>
-                      <td colspan="6">
-                          No Records Found
-                      </td>
-                  </tr>
-                  <?php
-              }
-              ?>
+                </button>
+            </a>
+        </td>
+    </tr>
+<?php
+        }
+    } else {
+?>
+    <tr>
+        <td colspan="6">
+            No Records Found
+        </td>
+    </tr>
+<?php
+    }
+?>
+
             </tbody>
           </table>
         </div>
@@ -1612,6 +1623,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.ban-btn').forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault();
+                const userId = this.getAttribute('data-id');
+
+                // Display SweetAlert confirmation dialog
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: 'You will not be able to recover this user!',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, ban user!',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    // If user confirms ban, redirect to ban_user.php with user ID
+                    if (result.isConfirmed) {
+                        window.location.href = `ban_user.php?id=${userId}`;
+                    }
+                });
+            });
+        });
+    });
+</script>
+                  
         <!-- Footer -->
         <div class="card-footer">
           <div class="row justify-content-center justify-content-sm-between align-items-sm-center">

@@ -17,7 +17,7 @@ if(isset($_POST['save'])) {
     $country = validate($_POST['country']);
 
     if($first_name != '' || $last_name != ''|| $address != ''|| $date != ''|| $month != ''|| $year != ''|| $apartment != ''|| $city != ''|| $state != ''|| $country != ''|| $phone != '') {
-        $query = "INSERT INTO identity (first_name, last_name,address, date,month, year,apartment, city,state,country,phone) 
+        $query = "INSERT INTO users (first_name, last_name,address, date,month, year,apartment, city,state,country,phone) 
                     VALUE ('$first_name','$last_name','$address','$date','$month','$year','$apartment','$city','$state','$country','$phone')";
         $result = mysqli_query($conn, $query);
 

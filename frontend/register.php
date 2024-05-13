@@ -174,73 +174,83 @@
                                             <div class="form__tabs__wrap">
                                             <div class="container">
                                             <?php
-                                            if (isset($_POST["submit"])) {
-                                                $fullName = $_POST["fullname"];
-                                                $email = $_POST["email"];
-                                                $password = $_POST["password"];
-                                                $passwordRepeat = $_POST["repeat_password"];
+if (isset($_POST["submit"])) {
+    $fullName = $_POST["fullname"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $phone = $_POST["phone"];
+    $city = $_POST["city"];
+    $state = $_POST["state"];
+    $country = $_POST["country"];
+    $date = $_POST["date"];
+    $passwordRepeat = $_POST["repeat_password"];
 
-                                                $errors = array();
+    $errors = [];
 
-                                                // Validate input fields
-                                                if (empty($fullName) || empty($email) || empty($password) || empty($passwordRepeat)) {
-                                                    $errors[] = "All fields are required";
-                                                }
+    // Validate input fields
+    if (empty($fullName) || empty($email) || empty($password) || empty($passwordRepeat) || empty($phone) || empty($city) || empty($state) || empty($country) || empty($date)) {
+        $errors[] = "All fields are required";
+    }
 
-                                                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                                                    $errors[] = "Email is not valid";
-                                                }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Email is not valid";
+    }
 
-                                                if (strlen($password) < 8) {
-                                                    $errors[] = "Password must be at least 8 characters long";
-                                                }
+    if (strlen($password) < 8) {
+        $errors[] = "Password must be at least 8 characters long";
+    }
 
-                                                if ($password !== $passwordRepeat) {
-                                                    $errors[] = "Passwords do not match";
-                                                }
+    if ($password !== $passwordRepeat) {
+        $errors[] = "Passwords do not match";
+    }
 
-                                                // Check if email already exists
-                                                require_once "database.php";
-                                                $sql = "SELECT * FROM users WHERE email = ?";
-                                                $stmt = mysqli_stmt_init($conn);
+    // Check if email already exists
+    require_once "database.php";
+    $sql = "SELECT * FROM users WHERE email = ?";
+    $stmt = mysqli_stmt_init($conn);
 
-                                                if (mysqli_stmt_prepare($stmt, $sql)) {
-                                                    mysqli_stmt_bind_param($stmt, "s", $email);
-                                                    mysqli_stmt_execute($stmt);
-                                                    $result = mysqli_stmt_get_result($stmt);
-                                                    if (mysqli_num_rows($result) > 0) {
-                                                        $errors[] = "Email already exists";
-                                                    }
-                                                }
+    if (mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        if (mysqli_num_rows($result) > 0) {
+            $errors[] = "Email already exists";
+        }
+    } else {
+        $errors[] = "Database error";
+    }
 
-                                                // If no errors, proceed with registration
-                                                if (empty($errors)) {
-                                                    // Hash the password
-                                                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+    // If no errors, proceed with registration
+    if (empty($errors)) {
+        // Hash the password
+        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-                                                    // Insert user into database
-                                                    $sql = "INSERT INTO users (full_name, email, password) VALUES (?, ?, ?)";
-                                                    $stmt = mysqli_stmt_init($conn);
+        // Insert user into database
+        $sql = "INSERT INTO users (full_name, email, password, phone, city, state, country, date)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
-                                                    if (mysqli_stmt_prepare($stmt, $sql)) {
-                                                        mysqli_stmt_bind_param($stmt, "sss", $fullName, $email, $passwordHash);
-                                                        mysqli_stmt_execute($stmt);
-                                                        echo "<div class='alert alert-success'>You are registered successfully.</div>";
-                                                    } else {
-                                                        echo "<div class='alert alert-danger'>Something went wrong. Please try again later.</div>";
-                                                    }
-                                                } else {
-                                                    // Display validation errors
-                                                    foreach ($errors as $error) {
-                                                        echo "<div class='alert alert-danger'>$error</div>";
-                                                    }
-                                                }
+        $stmt = mysqli_stmt_init($conn);
+        if (mysqli_stmt_prepare($stmt, $sql)) {
+            mysqli_stmt_bind_param($stmt, "ssssssss", $fullName, $email, $passwordHash, $phone, $city, $state, $country, $date);
+            mysqli_stmt_execute($stmt);
+            echo "<div class='alert alert-success'>You are registered successfully.</div>";
+        } else {
+            echo "<div class='alert alert-danger'>Something went wrong. Please try again later.</div>";
+        }
+        mysqli_stmt_close($stmt);
 
-                                                // Close database connection
-                                                mysqli_stmt_close($stmt);
-                                                mysqli_close($conn);
-                                            }
-                                            ?>
+    } else {
+        // Display validation errors
+        foreach ($errors as $error) {
+            echo "<div class='alert alert-danger'>$error</div>";
+        }
+    }
+
+    // Close database connection
+    mysqli_close($conn);
+}
+?>
+
                                             <form action="register.php" method="post">
                                                 <div class="form__grp">
                                                     <input type="text" class="form-control" name="fullname" placeholder="Full Name" value="<?php echo isset($_POST['fullname']) ? $_POST['fullname'] : ''; ?>">
@@ -253,6 +263,24 @@
                                                 </div>
                                                 <div class="form__grp">
                                                     <input type="password" class="form-control" name="repeat_password" placeholder="Repeat Password">
+                                                </div>
+                                                <p class="mb-3">Identity Details</p>
+                                                <div class="form__grp">
+                                                    <input type="text" class="form-control" name="city" placeholder="City">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="text" class="form-control" name="state" placeholder="State">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="text" class="form-control" name="country" placeholder="Country Name">
+                                                </div>
+
+                                                <p class="mb-3">Date Of Birth</p>
+                                                <div class="form__grp">
+                                                    <input type="text" class="form-control" name="phone" placeholder="Phone number">
+                                                </div>
+                                                <div class="form__grp">
+                                                    <input type="date" class="form-control" name="date" placeholder="Date">
                                                 </div>
                                                 <div class="create__btn">
                                                     <input type="submit" class="cmn--btn" style="width: 100%; border: none; color: #ffffff; font-size: 16px;" value="Register" name="submit">

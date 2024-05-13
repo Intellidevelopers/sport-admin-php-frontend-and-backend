@@ -973,19 +973,14 @@
           <div id="navbarVerticalMenu" class="nav nav-pills nav-vertical card-navbar-nav">
             <!-- Collapse -->
             <div class="nav-item">
-              <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuDashboards" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuDashboards" aria-expanded="false" aria-controls="navbarVerticalMenuDashboards">
+              <a class="nav-link active" href="index.php">
                 <i class="bi-house-door nav-icon"></i>
-                <span class="nav-link-title">Dashboards</span>
+                <span class="nav-link-title">Dashboard</span>
               </a>
-
-              <div id="navbarVerticalMenuDashboards" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenu">
-                <a class="nav-link " href="index.html">Default</a>
-                <a class="nav-link " href="dashboard-alternative.html">Alternative</a>
-              </div>
             </div>
             <!-- End Collapse -->
 
-            <span class="dropdown-header mt-4">Pages</span>
+            <span class="dropdown-header mt-4">More</span>
             <small class="bi-three-dots nav-subtitle-replacer"></small>
 
             <!-- Collapse -->
@@ -995,305 +990,78 @@
             <div id="navbarVerticalMenuPagesMenu">
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesUsersMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesUsersMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesUsersMenu">
+                <a class="nav-link" href="users.php">
                   <i class="bi-people nav-icon"></i>
                   <span class="nav-link-title">Users</span>
                 </a>
-
-                <div id="navbarVerticalMenuPagesUsersMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link " href="users.html">Overview</a>
-                  <a class="nav-link " href="users-leaderboard.html">Leaderboard</a>
-                  <a class="nav-link " href="users-add-user.html">Add User <span class="badge bg-info rounded-pill ms-1">Hot</span></a>
-                </div>
               </div>
               <!-- End Collapse -->
 
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle active" href="#navbarVerticalMenuPagesUserProfileMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesUserProfileMenu" aria-expanded="true" aria-controls="navbarVerticalMenuPagesUserProfileMenu">
+                <a class="nav-link" href="tournament.php" >
                   <i class="bi-person nav-icon"></i>
-                  <span class="nav-link-title">User Profile <span class="badge bg-primary rounded-pill ms-1">5</span></span>
+                  <span class="nav-link-title">Tournament <span class="badge bg-primary rounded-pill ms-1">5</span></span>
                 </a>
-
-                <div id="navbarVerticalMenuPagesUserProfileMenu" class="nav-collapse collapse show" data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link active" href="user-profile.html">Profile</a>
-                  <a class="nav-link " href="user-profile-teams.html">Teams</a>
-                  <a class="nav-link " href="user-profile-projects.html">Projects</a>
-                  <a class="nav-link " href="user-profile-connections.html">Connections</a>
-                  <a class="nav-link " href="user-profile-my-profile.html">My Profile</a>
-                </div>
-              </div>
               <!-- End Collapse -->
 
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesAccountMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesAccountMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesAccountMenu">
+                <a class="nav-link" href="tactics.php">
                   <i class="bi-person-badge nav-icon"></i>
-                  <span class="nav-link-title">Account</span>
+                  <span class="nav-link-title">Tactics</span>
                 </a>
-
-                <div id="navbarVerticalMenuPagesAccountMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link " href="account-settings.html">Settings</a>
-                  <a class="nav-link " href="account-billing.html">Billing</a>
-                  <a class="nav-link " href="account-invoice.html">Invoice</a>
-                </div>
               </div>
+              <!-- End Collapse -->
+
+              
               <!-- End Collapse -->
 
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesEcommerceMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesEcommerceMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesEcommerceMenu">
-                  <i class="bi-basket nav-icon"></i>
-                  <span class="nav-link-title">E-commerce</span>
-                </a>
-
-                <div id="navbarVerticalMenuPagesEcommerceMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link " href="ecommerce.html">Overview</a>
-
-                  <div id="navbarVerticalMenuPagesMenuEcommerce">
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle" href="#navbarVerticalMenuPagesEcommerceProductsMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesEcommerceProductsMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesEcommerceProductsMenu">
-                        Products
-                      </a>
-
-                      <div id="navbarVerticalMenuPagesEcommerceProductsMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenuEcommerce">
-                        <a class="nav-link " href="ecommerce-products.html">Products</a>
-                        <a class="nav-link " href="ecommerce-product-details.html">Product Details</a>
-                        <a class="nav-link " href="ecommerce-add-product.html">Add Product</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle" href="#navbarVerticalMenuPagesEcommerceOrdersMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesEcommerceOrdersMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesEcommerceOrdersMenu">
-                        Orders
-                      </a>
-
-                      <div id="navbarVerticalMenuPagesEcommerceOrdersMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenuEcommerce">
-                        <a class="nav-link " href="ecommerce-orders.html">Orders</a>
-                        <a class="nav-link " href="ecommerce-order-details.html">Order Details</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle" href="#navbarVerticalMenuPagesEcommerceCustomersMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesEcommerceCustomersMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesEcommerceCustomersMenu">
-                        Customers
-                      </a>
-
-                      <div id="navbarVerticalMenuPagesEcommerceCustomersMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenuEcommerce">
-                        <a class="nav-link " href="ecommerce-customers.html">Customers</a>
-                        <a class="nav-link " href="ecommerce-customer-details.html">Customer Details</a>
-                        <a class="nav-link " href="ecommerce-add-customers.html">Add Customers</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-                  </div>
-
-                  <a class="nav-link " href="ecommerce-referrals.html">Referrals</a>
-                  <a class="nav-link " href="ecommerce-manage-reviews.html">Manage Reviews</a>
-                  <a class="nav-link " href="ecommerce-checkout.html">Checkout</a>
-                </div>
-              </div>
-              <!-- End Collapse -->
-
-              <!-- Collapse -->
-              <div class="nav-item">
-                <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesProjectsMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesProjectsMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesProjectsMenu">
+                <a class="nav-link" href="leaderboard.php">
                   <i class="bi-stickies nav-icon"></i>
-                  <span class="nav-link-title">Projects</span>
+                  <span class="nav-link-title">Leaderboard</span>
                 </a>
-
-                <div id="navbarVerticalMenuPagesProjectsMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link " href="projects.html">Overview</a>
-                  <a class="nav-link " href="projects-timeline.html">Timeline</a>
-                </div>
               </div>
               <!-- End Collapse -->
 
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuPagesProjectMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuPagesProjectMenu" aria-expanded="false" aria-controls="navbarVerticalMenuPagesProjectMenu">
+                <a class="nav-link" href="medical-center.php">
                   <i class="bi-briefcase nav-icon"></i>
-                  <span class="nav-link-title">Project</span>
+                  <span class="nav-link-title">Medical Center</span>
                 </a>
-
-                <div id="navbarVerticalMenuPagesProjectMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuPagesMenu">
-                  <a class="nav-link " href="project.html">Overview</a>
-                  <a class="nav-link " href="project-files.html">Files</a>
-                  <a class="nav-link " href="project-activity.html">Activity</a>
-                  <a class="nav-link " href="project-teams.html">Teams</a>
-                  <a class="nav-link " href="project-settings.html">Settings</a>
-                </div>
               </div>
               <!-- End Collapse -->
 
               <!-- Collapse -->
               <div class="nav-item">
-                <a class="nav-link dropdown-toggle  collapsed" href="#" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthentication" aria-expanded="false" aria-controls="navbarVerticalMenuAuthentication">
+                <a class="nav-link" href="scouting.php">
                   <i class="bi-shield-lock nav-icon"></i>
-                  <span class="nav-link-title">Authentication</span>
+                  <span class="nav-link-title">Scouting</span>
                 </a>
-
-                <div id="navbarVerticalMenuAuthentication" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenu">
-                  <div id="navbarVerticalMenuAuthenticationMenu">
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuAuthenticationLoginMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthenticationLoginMenu" aria-expanded="false" aria-controls="navbarVerticalMenuAuthenticationLoginMenu">
-                        Log In
-                      </a>
-
-                      <div id="navbarVerticalMenuAuthenticationLoginMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuAuthenticationMenu">
-                        <a class="nav-link " href="authentication-login-basic.html">Basic</a>
-                        <a class="nav-link " href="authentication-login-cover.html">Cover</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuAuthenticationSignupMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthenticationSignupMenu" aria-expanded="false" aria-controls="navbarVerticalMenuAuthenticationSignupMenu">
-                        Sign Up
-                      </a>
-
-                      <div id="navbarVerticalMenuAuthenticationSignupMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuAuthenticationMenu">
-                        <a class="nav-link " href="authentication-signup-basic.html">Basic</a>
-                        <a class="nav-link " href="authentication-signup-cover.html">Cover</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuAuthenticationResetPasswordMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthenticationResetPasswordMenu" aria-expanded="false" aria-controls="navbarVerticalMenuAuthenticationResetPasswordMenu">
-                        Reset Password
-                      </a>
-
-                      <div id="navbarVerticalMenuAuthenticationResetPasswordMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuAuthenticationMenu">
-                        <a class="nav-link " href="authentication-reset-password-basic.html">Basic</a>
-                        <a class="nav-link " href="authentication-reset-password-cover.html">Cover</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuAuthenticationEmailVerificationMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthenticationEmailVerificationMenu" aria-expanded="false" aria-controls="navbarVerticalMenuAuthenticationEmailVerificationMenu">
-                        Email Verification
-                      </a>
-
-                      <div id="navbarVerticalMenuAuthenticationEmailVerificationMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuAuthenticationMenu">
-                        <a class="nav-link " href="authentication-email-verification-basic.html">Basic</a>
-                        <a class="nav-link " href="authentication-email-verification-cover.html">Cover</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <!-- Collapse -->
-                    <div class="nav-item">
-                      <a class="nav-link dropdown-toggle " href="#navbarVerticalMenuAuthentication2StepVerificationMenu" role="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalMenuAuthentication2StepVerificationMenu" aria-expanded="false" aria-controls="navbarVerticalMenuAuthentication2StepVerificationMenu">
-                        2-step Verification
-                      </a>
-
-                      <div id="navbarVerticalMenuAuthentication2StepVerificationMenu" class="nav-collapse collapse " data-bs-parent="#navbarVerticalMenuAuthenticationMenu">
-                        <a class="nav-link " href="authentication-2-step-verification-basic.html">Basic</a>
-                        <a class="nav-link " href="authentication-2-step-verification-cover.html">Cover</a>
-                      </div>
-                    </div>
-                    <!-- End Collapse -->
-
-                    <a class="nav-link" href="javascript:;" data-bs-toggle="modal" data-bs-target="#welcomeMessageModal">Welcome Message</a>
-                    <a class="nav-link " href="error-404.html">Error 404</a>
-                    <a class="nav-link " href="error-500.html">Error 500</a>
-                  </div>
-                </div>
               </div>
               <!-- End Collapse -->
 
-              <div class="nav-item">
-                <a class="nav-link " href="api-keys.html" data-placement="left">
-                  <i class="bi-key nav-icon"></i>
-                  <span class="nav-link-title">API Keys</span>
-                </a>
-              </div>
-
-              <div class="nav-item">
-                <a class="nav-link " href="welcome-page.html" data-placement="left">
-                  <i class="bi-eye nav-icon"></i>
-                  <span class="nav-link-title">Welcome Page</span>
-                </a>
-              </div>
-
-              <div class="nav-item">
-                <a class="nav-link " href="landing.html" data-placement="left">
-                  <i class="bi-box-seam nav-icon"></i>
-                  <span class="nav-link-title">Landing Page <span class="badge bg-info rounded-pill ms-1">New</span></span>
-                </a>
-              </div>
             </div>
             <!-- End Collapse -->
 
-            <span class="dropdown-header mt-4">Apps</span>
+            <span class="dropdown-header mt-4">Payments</span>
             <small class="bi-three-dots nav-subtitle-replacer"></small>
 
             <div class="nav-item">
-              <a class="nav-link " href="apps-kanban.html" data-placement="left">
-                <i class="bi-kanban nav-icon"></i>
-                <span class="nav-link-title">Kanban</span>
+              <a class="nav-link" href="wallet.php" data-placement="left">
+                <i class="bi-receipt nav-icon"></i>
+                <span class="nav-link-title">Wallet</span>
               </a>
             </div>
-
             <div class="nav-item">
-              <a class="nav-link " href="apps-calendar.html" data-placement="left">
-                <i class="bi-calendar-week nav-icon"></i>
-                <span class="nav-link-title">Calendar</span>
-              </a>
-            </div>
-
-            <div class="nav-item">
-              <a class="nav-link " href="apps-invoice-generator.html" data-placement="left">
+              <a class="nav-link" href="invoice.php" data-placement="left">
                 <i class="bi-receipt nav-icon"></i>
                 <span class="nav-link-title">Invoice Generator</span>
               </a>
             </div>
-
-            <div class="nav-item">
-              <a class="nav-link " href="apps-file-manager.html" data-placement="left">
-                <i class="bi-folder2-open nav-icon"></i>
-                <span class="nav-link-title">File Manager</span>
-              </a>
-            </div>
-
-            <span class="dropdown-header mt-4">Layouts</span>
-            <small class="bi-three-dots nav-subtitle-replacer"></small>
-
-            <div class="nav-item">
-              <a class="nav-link " href="layouts/index.html" data-placement="left">
-                <i class="bi-grid-1x2 nav-icon"></i>
-                <span class="nav-link-title">Layouts</span>
-              </a>
-            </div>
-
-            <span class="dropdown-header mt-4">Documentation</span>
-            <small class="bi-three-dots nav-subtitle-replacer"></small>
-
-            <div class="nav-item">
-              <a class="nav-link " href="documentation/index.html" data-placement="left">
-                <i class="bi-book nav-icon"></i>
-                <span class="nav-link-title">Documentation <span class="badge bg-primary rounded-pill ms-1">v2.1.1</span></span>
-              </a>
-            </div>
-
-            <div class="nav-item">
-              <a class="nav-link " href="documentation/typography.html" data-placement="left">
-                <i class="bi-layers nav-icon"></i>
-                <span class="nav-link-title">Components</span>
-              </a>
-            </div>
-          </div>
 
         </div>
         <!-- End Content -->
@@ -1448,7 +1216,13 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             $full_name = $user['full_name'];
             $email = $user['email'];
             $last_login = $user['last_login'];
-            $created_date = $user['created_date']; // Assuming 'created_date' is the column containing join date
+            $created_date = $user['created_date'];
+            $city = $user['city'];
+            $state = $user['state'];
+            $country = $user['country'];
+            $phone = $user['phone'];
+            $amount = $user['amount'];
+             // Assuming 'created_date' is the column containing join date
 
             // Display the user profile details
             ?>
@@ -1467,9 +1241,9 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <ul class="list-inline list-px-2">
                     <li class="list-inline-item">
                         <i class="bi-at me-1"></i>
-                        <span><?php echo $email; ?>,</span>
+                        <span><?php echo $email; ?> | </span>
                         <i class="bi-clock me-1"></i>
-                        <span><?php echo $last_login; ?></span>
+                        <span><?php echo $last_login; ?> | </span>
                     </li>
 
                     <li class="list-inline-item">
@@ -1480,26 +1254,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <!-- End List -->
             </div>
             <!-- End Profile Header -->
-            <?php
-        } else {
-            // Display error message if user not found
-            echo "User not found.";
-        }
 
-        // Close statement
-        mysqli_stmt_close($stmt);
-    } else {
-        // Display error message if query preparation fails
-        echo "Query preparation failed.";
-    }
-
-    // Close database connection
-    mysqli_close($conn);
-} else {
-    // Display error message if user ID is missing or invalid
-    echo "Invalid request. User ID not provided.";
-}
-?>
 
 
           <!-- Nav -->
@@ -1520,32 +1275,33 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
               <li class="nav-item">
                 <a class="nav-link active" href="user-profile.html">Profile</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-teams.html">Teams</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-projects.html">Projects <span class="badge bg-soft-dark text-dark rounded-circle ms-1">3</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="user-profile-connections.html">Connections</a>
-              </li>
+
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h4" id="mySmallModalLabel">Top up account balance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <?= alertMessage(); ?>
+        <form action="code.php" method="post">
+          <input type="text" name="amount" class="form-control" placeholder="Enter amount">
+          <br>
+          <button type="submit" name="topUp" style="width: 100%;" class="btn btn-primary mb-3" data-id="<?= $userItem['id']; ?>">Top Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
 
               <li class="nav-item ms-auto">
                 <div class="d-flex gap-2">
-                  <!-- Form Check -->
-                  <div class="form-check form-check-switch">
-                    <input class="form-check-input" type="checkbox" value="" id="connectCheckbox">
-                    <label class="form-check-label btn btn-sm" for="connectCheckbox">
-                      <span class="form-check-default">
-                        <i class="bi-person-plus-fill"></i> Connect
-                      </span>
-                      <span class="form-check-active">
-                        <i class="bi-check-lg me-2"></i> Connected
-                      </span>
-                    </label>
-                  </div>
-                  <!-- End Form Check -->
-
+                 
                   <a class="btn btn-icon btn-sm btn-white" href="#">
                     <i class="bi-list-ul me-1"></i>
                   </a>
@@ -1584,7 +1340,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             </ul>
           </div>
           <!-- End Nav -->
-
           <div class="row">
             <div class="col-lg-4">
               <!-- Card -->
@@ -1605,8 +1360,209 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
               <!-- Sticky Block Start Point -->
               <div id="accountSidebarNav"></div>
 
-              <!-- Card -->
-              <div class="js-sticky-block card mb-3 mb-lg-5" data-hs-sticky-block-options='{
+              
+            </div>
+
+            <div class="row">
+        <div class="col-sm-6 col-xl-3 mb-3 mb-xl-6">
+          <!-- Card -->
+          <div class="card card-sm h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <!-- Media -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="bi-receipt nav-icon"></i>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Account Balance</h4>
+                      <span class="d-block">NGN <?php echo $amount; ?></span>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Circle -->
+                  <div class="circles-chart">
+                    <div class="js-circle" data-hs-circles-options='{
+                           "value": 54,
+                           "maxValue": 100,
+                           "duration": 2000,
+                           "isViewportInit": true,
+                           "radius": 25,
+                           "width": 3,
+                           "fgStrokeLinecap": "round",
+                           "textFontSize": 14,
+                           "additionalText": "%",
+                           "textClass": "circles-chart-content",
+                           "textColor": "#377dff"
+                         }'></div>
+                  </div>
+                  <!-- End Circle -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-3 mb-xl-6">
+          <!-- Card -->
+          <div class="card card-sm h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <!-- Media -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="bi-bar-chart nav-icon"></i>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Status</h4>
+                      <span class="fs-5 text-success">
+                        <i class="tio-trending-up"></i> 7.50%
+                      </span>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Circle -->
+                  <div class="circles-chart">
+                    <div class="js-circle" data-hs-circles-options='{
+                           "value": 80,
+                           "maxValue": 100,
+                           "duration": 2000,
+                           "isViewportInit": true,
+                           "radius": 25,
+                           "width": 3,
+                           "fgStrokeLinecap": "round",
+                           "textFontSize": 14,
+                           "additionalText": "%",
+                           "textClass": "circles-chart-content",
+                           "textColor": "#377dff"
+                         }'></div>
+                  </div>
+                  <!-- End Circle -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-3 mb-xl-6">
+          <!-- Card -->
+          <div class="card card-sm h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <!-- Media -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="bi-check2-circle nav-icon"></i>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Tasks closed</h4>
+                      <span class="d-block">79 <span class="badge bg-soft-dark text-dark rounded-pill ms-1">+4 today</span></span>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Circle -->
+                  <div class="circles-chart">
+                    <div class="js-circle" data-hs-circles-options='{
+                           "value": 67,
+                           "maxValue": 100,
+                           "duration": 2000,
+                           "isViewportInit": true,
+                           "radius": 25,
+                           "width": 3,
+                           "fgStrokeLinecap": "round",
+                           "textFontSize": 14,
+                           "additionalText": "%",
+                           "textClass": "circles-chart-content",
+                           "textColor": "#377dff"
+                         }'></div>
+                  </div>
+                  <!-- End Circle -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-xl-3 mb-3 mb-xl-6">
+          <!-- Card -->
+          <div class="card card-sm h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <!-- Media -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <i class="bi-award nav-icon"></i>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h4 class="mb-1">Goals</h4>
+                      <span class="d-block">41/100</span>
+                    </div>
+                  </div>
+                  <!-- End Media -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <!-- Circle -->
+                  <div class="circles-chart">
+                    <div class="js-circle" data-hs-circles-options='{
+                           "value": 41,
+                           "maxValue": 100,
+                           "duration": 2000,
+                           "isViewportInit": true,
+                           "radius": 25,
+                           "width": 3,
+                           "fgStrokeLinecap": "round",
+                           "textFontSize": 14,
+                           "additionalText": "%",
+                           "textClass": "circles-chart-content",
+                           "textColor": "#377dff"
+                         }'></div>
+                  </div>
+                  <!-- End Circle -->
+                </div>
+                <!-- End Col -->
+              </div>
+              
+              <!-- End Row -->
+            </div>
+            
+          </div>
+          
+          <!-- End Card -->
+        </div>
+          <div class="row">
+            <div class="col-lg-4">
+        <div class="js-sticky-block card mb-1 mb-lg-2" data-hs-sticky-block-options='{
                      "parentSelector": "#accountSidebarNav",
                      "breakpoint": "lg",
                      "startPoint": "#accountSidebarNav",
@@ -1623,13 +1579,11 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <div class="card-body">
                   <ul class="list-unstyled list-py-2 text-dark mb-0">
                     <li class="pb-0"><span class="card-subtitle">About</span></li>
-                    <li><i class="bi-person dropdown-item-icon"></i> Ella Lauda</li>
-                    <li><i class="bi-briefcase dropdown-item-icon"></i> No department</li>
-                    <li><i class="bi-building dropdown-item-icon"></i> Htmlstream</li>
+                    <li><i class="bi-person dropdown-item-icon"></i> <?php echo $full_name; ?></li>
 
                     <li class="pt-4 pb-0"><span class="card-subtitle">Contacts</span></li>
-                    <li><i class="bi-at dropdown-item-icon"></i> ella@site.com</li>
-                    <li><i class="bi-phone dropdown-item-icon"></i> +1 (609) 972-22-22</li>
+                    <li><i class="bi-at dropdown-item-icon"></i> <?php echo $email; ?></li>
+                    <li><i class="bi-phone dropdown-item-icon"></i> <?php echo $phone; ?></li>
 
                     <li class="pt-4 pb-0"><span class="card-subtitle">Teams</span></li>
                     <li><i class="bi-people dropdown-item-icon"></i> Member of 7 teams</li>
@@ -1638,713 +1592,32 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 </div>
                 <!-- End Body -->
               </div>
-              <!-- End Card -->
             </div>
-
-            <div class="col-lg-8">
-              <div class="d-grid gap-3 gap-lg-5">
-                <!-- Card -->
-                <div class="card">
-                  <!-- Header -->
-                  <div class="card-header card-header-content-between">
-                    <h4 class="card-header-title">Activity stream</h4>
-
-                    <!-- Dropdown -->
-                    <div class="dropdown">
-                      <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm rounded-circle" id="contentActivityStreamDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi-three-dots-vertical"></i>
-                      </button>
-
-                      <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="contentActivityStreamDropdown">
-                        <span class="dropdown-header">Settings</span>
-
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-share-fill dropdown-item-icon"></i> Share connections
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-info-circle dropdown-item-icon"></i> Suggest edits
-                        </a>
-
-                        <div class="dropdown-divider"></div>
-
-                        <span class="dropdown-header">Feedback</span>
-
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
-                        </a>
-                      </div>
-                    </div>
-                    <!-- End Dropdown -->
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Body -->
-                  <div class="card-body card-body-height" style="height: 30rem;">
-                    <!-- Step -->
-                    <ul class="step step-icon-xs mb-0">
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Task report - uploaded weekly reports</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Added 3 files to task <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
-
-                            <ul class="list-group">
-                              <!-- Item -->
-                              <li class="list-group-item list-group-item-light">
-                                <div class="row gx-1">
-                                  <div class="col-sm-4">
-                                    <div class="d-flex">
-                                      <span class="flex-shrink-0">
-                                        <img class="avatar avatar-xs" src="assets/svg/brands/excel-icon.svg" alt="Image Description">
-                                      </span>
-                                      <div class="flex-grow-1 text-truncate ms-2">
-                                        <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
-                                        <span class="d-block small text-muted">12kb</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- End Col -->
-
-                                  <div class="col-sm-4">
-                                    <div class="d-flex">
-                                      <span class="flex-shrink-0">
-                                        <img class="avatar avatar-xs" src="assets/svg/brands/word-icon.svg" alt="Image Description">
-                                      </span>
-                                      <div class="flex-grow-1 text-truncate ms-2">
-                                        <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
-                                        <span class="d-block small text-muted">4kb</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- End Col -->
-
-                                  <div class="col-sm-4">
-                                    <div class="d-flex">
-                                      <span class="flex-shrink-0">
-                                        <img class="avatar avatar-xs" src="assets/svg/brands/word-icon.svg" alt="Image Description">
-                                      </span>
-                                      <div class="flex-grow-1 text-truncate ms-2">
-                                        <span class="d-block fs-6 text-dark text-truncate" title="monthly-reports.xls">monthly-reports.xls</span>
-                                        <span class="d-block small text-muted">8kb</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!-- End Col -->
-                                </div>
-                                <!-- End Row -->
-                              </li>
-                              <!-- End Item -->
-                            </ul>
-
-                            <span class="text-muted small text-uppercase">Now</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Project status updated</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
-
-                            <span class="text-muted small text-uppercase">Today</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">New card styles added</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Added 3 card to <a href="#">Payments</a></p>
-
-                            <ul class="list-group">
-                              <!-- Item -->
-                              <li class="list-group-item list-group-item-light">
-                                <div class="row gx-2">
-                                  <div class="col">
-                                    <img class="img-fluid rounded-2" src="assets/svg/components/card-1.svg" alt="Image Description">
-                                  </div>
-                                  <div class="col">
-                                    <img class="img-fluid rounded-2" src="assets/svg/components/card-2.svg" alt="Image Description">
-                                  </div>
-                                  <div class="col">
-                                    <img class="img-fluid rounded-2" src="assets/svg/components/card-3.svg" alt="Image Description">
-                                  </div>
-                                </div>
-                              </li>
-                              <!-- Item -->
-                            </ul>
-
-                            <span class="text-muted small text-uppercase">May 12</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Dean added a new team member</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Added a new member to Front Dashboard</p>
-
-                            <span class="text-muted small text-uppercase">May 15</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Project status updated</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span class="legend-indicator bg-primary"></span>"In progress"</span></p>
-
-                            <span class="text-muted small text-uppercase">Apr 29</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li class="step-item">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Achievements</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Earned a "Top endorsed" <i class="tio-verified text-primary"></i> badge</p>
-
-                            <span class="text-muted small text-uppercase">Apr 06</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-
-                      <!-- Step Item -->
-                      <li id="collapseActivitySection" class="step-item collapse">
-                        <div class="step-content-wrapper">
-                          <span class="step-icon step-icon-pseudo step-icon-soft-dark"></span>
-
-                          <div class="step-content">
-                            <h5 class="step-title">
-                              <a class="text-dark" href="#">Project status updated</a>
-                            </h5>
-
-                            <p class="fs-5 mb-1">Updated <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-secondary text-secondary rounded-pill"><span class="legend-indicator bg-secondary"></span>"To do"</span></p>
-
-                            <span class="text-muted small text-uppercase">Feb 10</span>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- End Step Item -->
-                    </ul>
-                    <!-- End Step -->
-                  </div>
-                  <!-- End Body -->
-
-                  <!-- Footer -->
-                  <div class="card-footer">
-                    <a class="link link-collapse" data-bs-toggle="collapse" href="#collapseActivitySection" role="button" aria-expanded="false" aria-controls="collapseActivitySection">
-                      <span class="link-collapse-default">View more</span>
-                      <span class="link-collapse-active">View less</span>
-                    </a>
-                  </div>
-                  <!-- End Footer -->
-                </div>
-                <!-- End Card -->
-
-                <div class="row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <!-- Card -->
-                    <div class="card h-100">
-                      <!-- Header -->
-                      <div class="card-header">
-                        <h4 class="card-header-title">Connections</h4>
-                      </div>
-                      <!-- End Header -->
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <ul class="list-unstyled list-py-3 mb-0">
-                          <!-- Item -->
-                          <li>
-                            <div class="d-flex align-items-center">
-                              <a class="d-flex align-items-center me-2" href="#">
-                                <div class="flex-shrink-0">
-                                  <div class="avatar avatar-sm avatar-soft-primary avatar-circle">
-                                    <span class="avatar-initials">R</span>
-                                    <span class="avatar-status avatar-sm-status avatar-status-warning"></span>
-                                  </div>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <h5 class="text-hover-primary mb-0">Rachel Doe</h5>
-                                  <span class="fs-6 text-body">25 connections</span>
-                                </div>
-                              </a>
-                              <div class="ms-auto">
-                                <!-- Form Check -->
-                                <div class="form-check form-check-switch">
-                                  <input class="form-check-input" type="checkbox" value="" id="connectionsCheckbox1" checked>
-                                  <label class="form-check-label btn-icon btn-xs rounded-circle" for="connectionsCheckbox1">
-                                    <span class="form-check-default">
-                                      <i class="bi-person-plus-fill"></i>
-                                    </span>
-                                    <span class="form-check-active">
-                                      <i class="bi-check-lg"></i>
-                                    </span>
-                                  </label>
-                                </div>
-                                <!-- End Form Check -->
-                              </div>
-                            </div>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <div class="d-flex align-items-center">
-                              <a class="d-flex align-items-center me-2" href="#">
-                                <div class="flex-shrink-0">
-                                  <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
-                                    <span class="avatar-status avatar-sm-status avatar-status-success"></span>
-                                  </div>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <h5 class="text-hover-primary mb-0">Isabella Finley</h5>
-                                  <span class="fs-6 text-body">79 connections</span>
-                                </div>
-                              </a>
-                              <div class="ms-auto">
-                                <!-- Form Check -->
-                                <div class="form-check form-check-switch">
-                                  <input class="form-check-input" type="checkbox" value="" id="connectionsCheckbox2">
-                                  <label class="form-check-label btn-icon btn-xs rounded-circle" for="connectionsCheckbox2">
-                                    <span class="form-check-default">
-                                      <i class="bi-person-plus-fill"></i>
-                                    </span>
-                                    <span class="form-check-active">
-                                      <i class="bi-check-lg"></i>
-                                    </span>
-                                  </label>
-                                </div>
-                                <!-- End Form Check -->
-                              </div>
-                            </div>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <div class="d-flex align-items-center">
-                              <a class="d-flex align-items-center me-2" href="#">
-                                <div class="flex-shrink-0">
-                                  <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
-                                    <span class="avatar-status avatar-sm-status avatar-status-warning"></span>
-                                  </div>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <h5 class="text-hover-primary mb-0">David Harrison</h5>
-                                  <span class="fs-6 text-body">0 connections</span>
-                                </div>
-                              </a>
-                              <div class="ms-auto">
-                                <!-- Form Check -->
-                                <div class="form-check form-check-switch">
-                                  <input class="form-check-input" type="checkbox" value="" id="connectionsCheckbox3" checked>
-                                  <label class="form-check-label btn-icon btn-xs rounded-circle" for="connectionsCheckbox3">
-                                    <span class="form-check-default">
-                                      <i class="bi-person-plus-fill"></i>
-                                    </span>
-                                    <span class="form-check-active">
-                                      <i class="bi-check-lg"></i>
-                                    </span>
-                                  </label>
-                                </div>
-                                <!-- End Form Check -->
-                              </div>
-                            </div>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <div class="d-flex align-items-center">
-                              <a class="d-flex align-items-center me-2" href="#">
-                                <div class="flex-shrink-0">
-                                  <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
-                                    <span class="avatar-status avatar-sm-status avatar-status-danger"></span>
-                                  </div>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <h5 class="text-hover-primary mb-0">Costa Quinn</h5>
-                                  <span class="fs-6 text-body">9 connections</span>
-                                </div>
-                              </a>
-                              <div class="ms-auto">
-                                <!-- Form Check -->
-                                <div class="form-check form-check-switch">
-                                  <input class="form-check-input" type="checkbox" value="" id="connectionsCheckbox4">
-                                  <label class="form-check-label btn-icon btn-xs rounded-circle" for="connectionsCheckbox4">
-                                    <span class="form-check-default">
-                                      <i class="bi-person-plus-fill"></i>
-                                    </span>
-                                    <span class="form-check-active">
-                                      <i class="bi-check-lg"></i>
-                                    </span>
-                                  </label>
-                                </div>
-                                <!-- End Form Check -->
-                              </div>
-                            </div>
-                          </li>
-                          <!-- End Item -->
-                        </ul>
-                      </div>
-                      <!-- End Body -->
-
-                      <!-- Footer -->
-                      <a class="card-footer text-center" href="user-profile-connections.html">
-                        View all connections <i class="bi-chevron-right"></i>
-                      </a>
-                      <!-- End Footer -->
-                    </div>
-                    <!-- End Card -->
-                  </div>
-
-                  <div class="col-sm-6">
-                    <!-- Card -->
-                    <div class="card h-100">
-                      <!-- Header -->
-                      <div class="card-header">
-                        <h4 class="card-header-title">Teams</h4>
-                      </div>
-                      <!-- End Header -->
-
-                      <!-- Body -->
-                      <div class="card-body">
-                        <ul class="nav nav-pills card-nav card-nav-vertical nav-pills">
-                          <!-- Item -->
-                          <li>
-                            <a class="nav-link" href="#">
-                              <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                  <i class="bi-people-fill nav-icon text-dark"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <span class="d-block text-dark">#digitalmarketing</span>
-                                  <small class="d-block text-muted">8 members</small>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <a class="nav-link" href="#">
-                              <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                  <i class="bi-people-fill nav-icon text-dark"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <span class="d-block text-dark">#ethereum</span>
-                                  <small class="d-block text-muted">14 members</small>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <a class="nav-link" href="#">
-                              <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                  <i class="bi-people-fill nav-icon text-dark"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <span class="d-block text-dark">#conference</span>
-                                  <small class="d-block text-muted">3 members</small>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <a class="nav-link" href="#">
-                              <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                  <i class="bi-people-fill nav-icon text-dark"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <span class="d-block text-dark">#supportteam</span>
-                                  <small class="d-block text-muted">3 members</small>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <!-- End Item -->
-
-                          <!-- Item -->
-                          <li>
-                            <a class="nav-link" href="#">
-                              <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                  <i class="bi-people-fill nav-icon text-dark"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                  <span class="d-block text-dark">#invoices</span>
-                                  <small class="d-block text-muted">3 members</small>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <!-- End Item -->
-                        </ul>
-                      </div>
-                      <!-- End Body -->
-
-                      <!-- Footer -->
-                      <a class="card-footer text-center" href="user-profile-teams.html">
-                        View all teams <i class="bi-chevron-right"></i>
-                      </a>
-                      <!-- End Footer -->
-                    </div>
-                    <!-- End Card -->
-                  </div>
-                </div>
-                <!-- End Row -->
-
-                <!-- Card -->
-                <div class="card">
-                  <!-- Header -->
-                  <div class="card-header card-header-content-between">
-                    <h4 class="card-header-title">Projects</h4>
-
-                    <!-- Dropdown -->
-                    <div class="dropdowm">
-                      <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm rounded-circle" id="projectReportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi-three-dots-vertical"></i>
-                      </button>
-
-                      <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="projectReportDropdown">
-                        <span class="dropdown-header">Settings</span>
-
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-share-fill dropdown-item-icon"></i> Share connections
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-info-circle dropdown-item-icon"></i> Suggest edits
-                        </a>
-
-                        <div class="dropdown-divider"></div>
-
-                        <span class="dropdown-header">Feedback</span>
-
-                        <a class="dropdown-item" href="#">
-                          <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
-                        </a>
-                      </div>
-                    </div>
-                    <!-- End Dropdown -->
-                  </div>
-                  <!-- End Header -->
-
-                  <!-- Table -->
-                  <div class="table-responsive">
-                    <table class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
-                      <thead class="thead-light">
-                        <tr>
-                          <th>Project</th>
-                          <th style="width: 40%;">Progress</th>
-                          <th class="table-text-end">Hours spent</th>
-                        </tr>
-                      </thead>
-
-                      <tbody>
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <span class="avatar avatar-xs avatar-soft-dark avatar-circle">
-                                <span class="avatar-initials">U</span>
-                              </span>
-                              <div class="ms-3">
-                                <h5 class="mb-0">UI/UX</h5>
-                                <small>Updated 2 hours ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">0%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">4:25</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <img class="avatar avatar-xs" src="assets/svg/brands/spec-icon.svg" alt="Image Description">
-                              <div class="ms-3">
-                                <h5 class="mb-0">Get a complete audit store</h5>
-                                <small>Updated 1 day ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">45%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">18:42</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <img class="avatar avatar-xs" src="assets/svg/brands/capsule-icon.svg" alt="Image Description">
-                              <div class="ms-3">
-                                <h5 class="mb-0">Build stronger customer relationships</h5>
-                                <small>Updated 2 days ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">59%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 59%" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">9:01</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <img class="avatar avatar-xs" src="assets/svg/brands/mailchimp-icon.svg" alt="Image Description">
-                              <div class="ms-3">
-                                <h5 class="mb-0">Update subscription method</h5>
-                                <small>Updated 2 days ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">57%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">0:37</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <img class="avatar avatar-xs" src="assets/svg/brands/figma-icon.svg" alt="Image Description">
-                              <div class="ms-3">
-                                <h5 class="mb-0">Create a new theme</h5>
-                                <small>Updated 1 week ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">100%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">24:12</td>
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div class="d-flex">
-                              <span class="avatar avatar-xs avatar-soft-info avatar-circle">
-                                <span class="avatar-initials">I</span>
-                              </span>
-                              <div class="ms-3">
-                                <h5 class="mb-0">Improve social banners</h5>
-                                <small>Updated 1 week ago</small>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="me-3">0%</span>
-                              <div class="progress table-progress">
-                                <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table-text-end">8:08</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- End Table -->
-
-                  <!-- Footer -->
-                  <a class="card-footer text-center" href="projects.html">
-                    View all projects <i class="bi-chevron-right"></i>
-                  </a>
-                  <!-- End Footer -->
-                </div>
-                <!-- End Card -->
-              </div>
+            </
+        <!-- Card -->
+      </div>
+      <!-- End Row -->
+      <?php
+        } else {
+            // Display error message if user not found
+            echo "User not found.";
+        }
+
+        // Close statement
+        mysqli_stmt_close($stmt);
+    } else {
+        // Display error message if query preparation fails
+        echo "Query preparation failed.";
+    }
+
+    // Close database connection
+    mysqli_close($conn);
+} else {
+    // Display error message if user ID is missing or invalid
+    echo "Invalid request. User ID not provided.";
+}
+?>
+              
 
               <!-- Sticky Block End Point -->
               <div id="stickyBlockEndPoint"></div>

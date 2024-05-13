@@ -1,20 +1,20 @@
 <?php
 
-    require '../config/function.php';
+    require 'config/function.php';
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from htmlstream.com/preview/front-dashboard-v2.1.1/account-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Apr 2024 20:10:27 GMT -->
+<!-- Mirrored from htmlstream.com/preview/front-dashboard-v2.1.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Apr 2024 20:07:08 GMT -->
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Account Settings | Front - Admin &amp; Dashboard Template</title>
+  <title>Dashboard | Front - Admin &amp; Dashboard Template</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
@@ -23,13 +23,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="assets/css/vendor.min.css">
+  <link rel="stylesheet" href="/assets/css/vendor.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="/assets/css/theme.minc619.css?v=1.0">
 
-  <link rel="preload" href="assets/css/theme.min.css" data-hs-appearance="default" as="style">
-  <link rel="preload" href="assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
+  <link rel="preload" href="/assets/css/theme.min.css" data-hs-appearance="default" as="style">
+  <link rel="preload" href="/assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
 
   <style data-hs-appearance-onload-styles>
     *
@@ -55,7 +55,7 @@
   <!-- END ONLY DEV -->
 
   <script>
-            window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","assets/js/demo.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.html","assets/css/docs.css","assets/vendor/icon-set/style.html","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.html","assets/js/demo.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+            window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["/assets/js/hs.theme-appearance.js","/assets/js/hs.theme-appearance-charts.js","/assets/js/demo.js"],"build":["/assets/css/theme.css","/assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","/assets/js/demo.js","/assets/css/theme-dark.html","/assets/css/docs.css","/assets/vendor/icon-set/style.html","/assets/js/hs.theme-appearance.js","/assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.html","/assets/js/demo.js"]},"minifyCSSFiles":["/assets/css/theme.css","/assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*/assets/js/theme-custom.js":""},"build":{"*/assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"/assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
             window.hs_config.gulpRGBA = (p1) => {
   const options = p1.split(',')
   const hex = options[0].toString()
@@ -141,9 +141,9 @@
 
 <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
 
-  <script src="assets/js/hs.theme-appearance.js"></script>
+  <script src="/assets/js/hs.theme-appearance.js"></script>
 
-  <script src="assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
+  <script src="/assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js"></script>
 
   <!-- ========== HEADER ========== -->
 
@@ -151,10 +151,10 @@
     <div class="navbar-nav-wrap">
       <!-- Logo -->
       <a class="navbar-brand" href="index.html" aria-label="Front">
-        <img class="navbar-brand-logo" src="assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
-        <img class="navbar-brand-logo" src="assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
-        <img class="navbar-brand-logo-mini" src="assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
-        <img class="navbar-brand-logo-mini" src="assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
+        <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
+        <img class="navbar-brand-logo" src="/assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
+        <img class="navbar-brand-logo-mini" src="/assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
+        <img class="navbar-brand-logo-mini" src="/assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
       </a>
       <!-- End Logo -->
 
@@ -268,7 +268,7 @@
                 <a class="dropdown-item" href="index.html">
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <img class="avatar avatar-xs avatar-circle" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                      <img class="avatar avatar-xs avatar-circle" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                     </div>
                     <div class="flex-grow-1 text-truncate ms-2">
                       <span>Amanda Harvey <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></span>
@@ -279,7 +279,7 @@
                 <a class="dropdown-item" href="index.html">
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <img class="avatar avatar-xs avatar-circle" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                      <img class="avatar avatar-xs avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description">
                     </div>
                     <div class="flex-grow-1 text-truncate ms-2">
                       <span>David Harrison</span>
@@ -392,7 +392,7 @@
                                     <label class="form-check-label" for="notificationCheck1"></label>
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
-                                  <img class="avatar avatar-sm avatar-circle" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                  <img class="avatar avatar-sm avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description">
                                 </div>
                               </div>
                               <!-- End Col -->
@@ -458,7 +458,7 @@
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
                                   <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                                    <img class="avatar-img" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                                   </div>
                                 </div>
                               </div>
@@ -490,7 +490,7 @@
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
                                   <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/svg/brands/google-icon.svg" alt="Image Description">
+                                    <img class="avatar-img" src="/assets/svg/brands/google-icon.svg" alt="Image Description">
                                   </div>
                                 </div>
                               </div>
@@ -522,7 +522,7 @@
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
                                   <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                                    <img class="avatar-img" src="/assets/img/160x160/img7.jpg" alt="Image Description">
                                   </div>
                                 </div>
                               </div>
@@ -592,7 +592,7 @@
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
                                   <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                    <img class="avatar-img" src="/assets/img/160x160/img5.jpg" alt="Image Description">
                                   </div>
                                 </div>
                               </div>
@@ -656,7 +656,7 @@
                                     <span class="form-check-stretched-bg"></span>
                                   </div>
                                   <div class="avatar avatar-sm avatar-circle">
-                                    <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
+                                    <img class="avatar-img" src="/assets/img/160x160/img8.jpg" alt="Image Description">
                                   </div>
                                 </div>
                               </div>
@@ -747,7 +747,7 @@
                     <a class="dropdown-item" href="#">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/atlassian-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/atlassian-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-3">
                           <h5 class="mb-0">Atlassian</h5>
@@ -759,7 +759,7 @@
                     <a class="dropdown-item" href="#">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/slack-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/slack-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-3">
                           <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
@@ -771,7 +771,7 @@
                     <a class="dropdown-item" href="#">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-3">
                           <h5 class="mb-0">Google webdev</h5>
@@ -783,7 +783,7 @@
                     <a class="dropdown-item" href="#">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/frontapp-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/frontapp-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-3">
                           <h5 class="mb-0">Frontapp</h5>
@@ -795,7 +795,7 @@
                     <a class="dropdown-item" href="#">
                       <div class="d-flex align-items-center">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs avatar-4x3" src="assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                          <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-3">
                           <h5 class="mb-0">HS Support</h5>
@@ -844,7 +844,7 @@
             <div class="dropdown">
               <a class="navbar-dropdown-account-wrapper" href="javascript:;" id="accountNavbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
                 <div class="avatar avatar-sm avatar-circle">
-                  <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                  <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                   <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                 </div>
               </a>
@@ -853,7 +853,7 @@
                 <div class="dropdown-item-text">
                   <div class="d-flex align-items-center">
                     <div class="avatar avatar-sm avatar-circle">
-                      <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                      <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h5 class="mb-0">Mark Williams</h5>
@@ -952,10 +952,10 @@
         <!-- Logo -->
 
         <a class="navbar-brand" href="index.html" aria-label="Front">
-          <img class="navbar-brand-logo" src="assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
-          <img class="navbar-brand-logo" src="assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
-          <img class="navbar-brand-logo-mini" src="assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
-          <img class="navbar-brand-logo-mini" src="assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
+          <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
+          <img class="navbar-brand-logo" src="/assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
+          <img class="navbar-brand-logo-mini" src="/assets/svg/logos/logo-short.svg" alt="Logo" data-hs-theme-appearance="default">
+          <img class="navbar-brand-logo-mini" src="/assets/svg/logos-light/logo-short.svg" alt="Logo" data-hs-theme-appearance="dark">
         </a>
 
         <!-- End Logo -->
@@ -1135,33 +1135,33 @@
               <!-- Language -->
               <div class="dropdown dropup">
                 <button type="button" class="btn btn-ghost-secondary btn-icon rounded-circle" id="selectLanguageDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-dropdown-animation>
-                  <img class="avatar avatar-xss avatar-circle" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+                  <img class="avatar avatar-xss avatar-circle" src="/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
                 </button>
 
                 <div class="dropdown-menu navbar-dropdown-menu-borderless" aria-labelledby="selectLanguageDropdown">
                   <span class="dropdown-header">Select language</span>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
                     <span class="text-truncate" title="English">English (US)</span>
                   </a>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
                     <span class="text-truncate" title="English">English (UK)</span>
                   </a>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
                     <span class="text-truncate" title="Deutsch">Deutsch</span>
                   </a>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
                     <span class="text-truncate" title="Dansk">Dansk</span>
                   </a>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
                     <span class="text-truncate" title="Italiano">Italiano</span>
                   </a>
                   <a class="dropdown-item" href="#">
-                    <img class="avatar avatar-xss avatar-circle me-2" src="assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                    <img class="avatar avatar-xss avatar-circle me-2" src="/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
                     <span class="text-truncate" title="中文 (繁體)">中文 (繁體)</span>
                   </a>
                 </div>
@@ -1176,21 +1176,22 @@
     </div>
   </aside>
 
+  <!-- End Navbar Vertical -->
+
   <main id="content" role="main" class="main">
     <!-- Content -->
     <div class="content container-fluid">
       <!-- Page Header -->
       <div class="page-header">
-        <div class="row align-items-end">
-          <div class="col-sm mb-2 mb-sm-0">
-
-            <h1 class="page-header-title">Edit User</h1>
+        <div class="row align-items-center">
+          <div class="col">
+            <h1 class="page-header-title">Dashboard</h1>
           </div>
           <!-- End Col -->
 
-          <div class="col-sm-auto">
-            <a class="btn btn-primary" href="create-user.php">
-              <i class="bi-person-fill me-1"></i> Add User
+          <div class="col-auto">
+            <a class="btn btn-primary" href="javascript:;" data-bs-toggle="modal" data-bs-target="#inviteUserModal">
+              <i class="bi-person-plus-fill me-1"></i> Invite users
             </a>
           </div>
           <!-- End Col -->
@@ -1198,108 +1199,1035 @@
         <!-- End Row -->
       </div>
       <!-- End Page Header -->
+<?php
+
+// Retrieving exisiting visitors
+$query="SELECT * FROM counter";
+$result=mysqli_query($conn, $query);
+
+
+// Checking query error
+if(!$result) {
+    die("Retrieving Query Error");
+}
+$total_visitors=mysqli_num_rows($result);
+
+?>
+      <!-- Stats -->
+      <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+          <!-- Card -->
+          <a class="card card-hover-shadow h-100" href="#">
+            <div class="card-body">
+              <h6 class="card-subtitle">Total Users</h6>
+
+              <div class="row align-items-center gx-2 mb-1">
+                <div class="col-6">
+                  <h2 class="card-title text-inherit"><?php echo getTotalUsers(); ?></h2>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-6">
+                  <!-- Chart -->
+                  <div class="chartjs-custom" style="height: 3rem;">
+                    <canvas class="js-chart" data-hs-chartjs-options='{
+                              "type": "line",
+                              "data": {
+                                 "labels": ["1 May","2 May","3 May","4 May","5 May","6 May","7 May","8 May","9 May","10 May","11 May","12 May","13 May","14 May","15 May","16 May","17 May","18 May","19 May","20 May","21 May","22 May","23 May","24 May","25 May","26 May","27 May","28 May","29 May","30 May","31 May"],
+                                 "datasets": [{
+                                  "data": [21,20,24,20,18,17,15,17,18,30,31,30,30,35,25,35,35,40,60,90,90,90,85,70,75,70,30,30,30,50,72],
+                                  "backgroundColor": ["rgba(55, 125, 255, 0)", "rgba(255, 255, 255, 0)"],
+                                  "borderColor": "#377dff",
+                                  "borderWidth": 2,
+                                  "pointRadius": 0,
+                                  "pointHoverRadius": 0
+                                }]
+                              },
+                              "options": {
+                                 "scales": {
+                                   "y": {
+                                     "display": false
+                                   },
+                                   "x": {
+                                     "display": false
+                                   }
+                                 },
+                                "hover": {
+                                  "mode": "nearest",
+                                  "intersect": false
+                                },
+                                "plugins": {
+                                  "tooltip": {
+                                    "postfix": "k",
+                                    "hasIndicator": true,
+                                    "intersect": false
+                                  }
+                                }
+                              }
+                            }'>
+                    </canvas>
+                  </div>
+                  <!-- End Chart -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <span class="badge bg-soft-success text-success">
+                <i class="bi-graph-up"></i> 12.5%
+              </span>
+              <span class="text-body fs-6 ms-1">from 70,104</span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+          <!-- Card -->
+          <a class="card card-hover-shadow h-100" href="#">
+            <div class="card-body">
+              <h6 class="card-subtitle">Tournament</h6>
+
+              <div class="row align-items-center gx-2 mb-1">
+                <div class="col-6">
+                  <h2 class="card-title text-inherit"><?php echo getTotalTournament(); ?></h2>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-6">
+                  <!-- Chart -->
+                  <div class="chartjs-custom" style="height: 3rem;">
+                    <canvas class="js-chart" data-hs-chartjs-options='{
+                              "type": "line",
+                              "data": {
+                                 "labels": ["1 May","2 May","3 May","4 May","5 May","6 May","7 May","8 May","9 May","10 May","11 May","12 May","13 May","14 May","15 May","16 May","17 May","18 May","19 May","20 May","21 May","22 May","23 May","24 May","25 May","26 May","27 May","28 May","29 May","30 May","31 May"],
+                                 "datasets": [{
+                                  "data": [21,20,24,20,18,17,15,17,30,30,35,25,18,30,31,35,35,90,90,90,85,100,120,120,120,100,90,75,75,75,90],
+                                  "backgroundColor": ["rgba(55, 125, 255, 0)", "rgba(255, 255, 255, 0)"],
+                                  "borderColor": "#377dff",
+                                  "borderWidth": 2,
+                                  "pointRadius": 0,
+                                  "pointHoverRadius": 0
+                                }]
+                              },
+                              "options": {
+                                 "scales": {
+                                   "y": {
+                                     "display": false
+                                   },
+                                   "x": {
+                                     "display": false
+                                   }
+                                 },
+                                "hover": {
+                                  "mode": "nearest",
+                                  "intersect": false
+                                },
+                                "plugins": {
+                                  "tooltip": {
+                                    "postfix": "k",
+                                    "hasIndicator": true,
+                                    "intersect": false
+                                  }
+                                }
+                              }
+                            }'>
+                    </canvas>
+                  </div>
+                  <!-- End Chart -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <span class="badge bg-soft-success text-success">
+                <i class="bi-graph-up"></i> 1.7%
+              </span>
+              <span class="text-body fs-6 ms-1">from 29.1%</span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+          <!-- Card -->
+          <a class="card card-hover-shadow h-100" href="#">
+            <div class="card-body">
+              <h6 class="card-subtitle">Avg. Click Rate</h6>
+
+              <div class="row align-items-center gx-2 mb-1">
+                <div class="col-6">
+                  <h2 class="card-title text-inherit">17.1%</h2>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-6">
+                  <!-- Chart -->
+                  <div class="chartjs-custom" style="height: 3rem;">
+                    <canvas class="js-chart" data-hs-chartjs-options='{
+                              "type": "line",
+                              "data": {
+                                 "labels": ["1 May","2 May","3 May","4 May","5 May","6 May","7 May","8 May","9 May","10 May","11 May","12 May","13 May","14 May","15 May","16 May","17 May","18 May","19 May","20 May","21 May","22 May","23 May","24 May","25 May","26 May","27 May","28 May","29 May","30 May","31 May"],
+                                 "datasets": [{
+                                  "data": [25,18,30,31,35,35,60,60,60,75,21,20,24,20,18,17,15,17,30,120,120,120,100,90,75,90,90,90,75,70,60],
+                                  "backgroundColor": ["rgba(55, 125, 255, 0)", "rgba(255, 255, 255, 0)"],
+                                  "borderColor": "#377dff",
+                                  "borderWidth": 2,
+                                  "pointRadius": 0,
+                                  "pointHoverRadius": 0
+                                }]
+                              },
+                              "options": {
+                                 "scales": {
+                                   "y": {
+                                     "display": false
+                                   },
+                                   "x": {
+                                     "display": false
+                                   }
+                                 },
+                                "hover": {
+                                  "mode": "nearest",
+                                  "intersect": false
+                                },
+                                "plugins": {
+                                  "tooltip": {
+                                    "postfix": "k",
+                                    "hasIndicator": true,
+                                    "intersect": false
+                                  }
+                                }
+                              }
+                            }'>
+                    </canvas>
+                  </div>
+                  <!-- End Chart -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <span class="badge bg-soft-danger text-danger">
+                <i class="bi-graph-down"></i> 4.4%
+              </span>
+              <span class="text-body fs-6 ms-1">from 61.2%</span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+          <!-- Card -->
+          <a class="card card-hover-shadow h-100" href="#">
+            <div class="card-body">
+              <h6 class="card-subtitle">Pageviews</h6>
+
+              <div class="row align-items-center gx-2 mb-1">
+                <div class="col-6">
+                  <h2 class="card-title text-inherit"><?php echo  $total_visitors; ?></h2>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-6">
+                  <!-- Chart -->
+                  <div class="chartjs-custom" style="height: 3rem;">
+                    <canvas class="js-chart" data-hs-chartjs-options='{
+                              "type": "line",
+                              "data": {
+                                 "labels": ["1 May","2 May","3 May","4 May","5 May","6 May","7 May","8 May","9 May","10 May","11 May","12 May","13 May","14 May","15 May","16 May","17 May","18 May","19 May","20 May","21 May","22 May","23 May","24 May","25 May","26 May","27 May","28 May","29 May","30 May","31 May"],
+                                 "datasets": [{
+                                  "data": [21,20,24,15,17,30,30,35,35,35,40,60,12,90,90,85,70,75,43,75,90,22,120,120,90,85,100,92,92,92,92],
+                                  "backgroundColor": ["rgba(55, 125, 255, 0)", "rgba(255, 255, 255, 0)"],
+                                  "borderColor": "#377dff",
+                                  "borderWidth": 2,
+                                  "pointRadius": 0,
+                                  "pointHoverRadius": 0
+                                }]
+                              },
+                              "options": {
+                                 "scales": {
+                                   "y": {
+                                     "display": false
+                                   },
+                                   "x": {
+                                     "display": false
+                                   }
+                                 },
+                                "hover": {
+                                  "mode": "nearest",
+                                  "intersect": false
+                                },
+                                "plugins": {
+                                  "tooltip": {
+                                    "postfix": "k",
+                                    "hasIndicator": true,
+                                    "intersect": false
+                                  }
+                                }
+                              }
+                            }'>
+                    </canvas>
+                  </div>
+                  <!-- End Chart -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <span class="badge bg-soft-secondary text-body">0.0%</span>
+              <span class="text-body fs-6 ms-1">from 2,913</span>
+            </div>
+          </a>
+          <!-- End Card -->
+        </div>
+      </div>
+      <!-- End Stats -->
 
       <div class="row">
+        <div class="col-lg-5 mb-3 mb-lg-5">
+          <!-- Card -->
+          <div class="card h-100">
+            <!-- Header -->
+            <div class="card-header card-header-content-between">
+              <h4 class="card-header-title">Import data into Front Dashboard</h4>
 
-        <div class="col-lg-9">
-          <div class="d-grid gap-3 gap-lg-5">
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm rounded-circle" id="reportsOverviewDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-three-dots-vertical"></i>
+                </button>
 
-            <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <h2 class="card-title h4">Basic information</h2>
+                <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="reportsOverviewDropdown2">
+                  <span class="dropdown-header">Settings</span>
+
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-share-fill dropdown-item-icon"></i> Share chart
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-download dropdown-item-icon"></i> Download
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-alt dropdown-item-icon"></i> Connect other apps
+                  </a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <span class="dropdown-header">Feedback</span>
+
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                  </a>
+                </div>
               </div>
+              <!-- End Dropdown -->
+            </div>
+            <!-- End Header -->
 
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Form -->
-                <?=  alertMessage(); ?>
-                <form action="user-code.php" method="post">
+            <!-- Body -->
+            <div class="card-body">
+              <p>See and talk to your users and leads immediately by importing your data into the Front Dashboard platform.</p>
 
-                <?php
-                                                
-                $paramResult = checkParamId('id');
-                if(!is_numeric($paramResult)){
-                    echo '<h5>'.$paramResult.'</h5>';
-                    return false;
-                }
+              <ul class="list-group list-group-flush list-group-no-gutters">
+                <li class="list-group-item">
+                  <h5 class="card-title">Import users from:</h5>
+                </li>
 
-                $user = getById('users', checkParamId('id'));
-                if($user['status'] == 200){
-                
-                ?>
+                <!-- List Group Item -->
+                <li class="list-group-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/capsule-icon.svg" alt="Image Description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <h5 class="mb-0">Capsule</h5>
+                          <span class="d-block fs-6 text-body">Users</span>
+                        </div>
+                        <!-- End Col -->
 
-                <input type="hidden" name="userId" value="<?= $user['data']['id']; ?>">
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="firstNameLabel" class="col-sm-3 col-form-label form-label">Full name <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Input your full name."></i></label>
+                        <div class="col-auto">
+                          <a class="btn btn-primary btn-sm" href="#" title="Launch importer" target="_blank">
+                            Launch <span class="d-none d-sm-inline-block">importer</span>
+                            <i class="bi-box-arrow-up-right ms-1"></i>
+                          </a>
+                        </div>
+                        <!-- End Col -->
+                      </div>
+                      <!-- End Row -->
+                    </div>
+                  </div>
+                </li>
+                <!-- End List Group Item -->
 
-                    <div class="col-sm-9">
-                      <div class="input-group input-group-sm-vertical">
-                        <input type="text" class="form-control" name="full_name" value="<?= $user['data']['full_name']; ?>" id="firstNameLabel" placeholder="Your full name" aria-label="Your full name" value="Adeagbo Josiah">
+                <!-- List Group Item -->
+                <li class="list-group-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/mailchimp-icon.svg" alt="Image Description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <h5 class="mb-0">Mailchimp</h5>
+                          <span class="d-block fs-6 text-body">Users</span>
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-auto">
+                          <a class="btn btn-primary btn-sm" href="#" title="Launch importer" target="_blank">
+                            Launch <span class="d-none d-sm-inline-block">importer</span>
+                            <i class="bi-box-arrow-up-right ms-1"></i>
+                          </a>
+                        </div>
+                        <!-- End Col -->
+                      </div>
+                      <!-- End Row -->
+                    </div>
+                  </div>
+                </li>
+                <!-- End List Group Item -->
+
+                <!-- List Group Item -->
+                <li class="list-group-item">
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <div class="row align-items-center">
+                        <div class="col">
+                          <h5 class="mb-0">Webdev</h5>
+                          <span class="d-block fs-6 text-body">Users</span>
+                        </div>
+                        <!-- End Col -->
+
+                        <div class="col-auto">
+                          <a class="btn btn-primary btn-sm" href="#" title="Launch importer" target="_blank">
+                            Launch <span class="d-none d-sm-inline-block">importer</span>
+                            <i class="bi-box-arrow-up-right ms-1"></i>
+                          </a>
+                        </div>
+                        <!-- End Col -->
+                      </div>
+                      <!-- End Row -->
+                    </div>
+                  </div>
+                </li>
+                <!-- End List Group Item -->
+
+                <li class="list-group-item"><span class="small text-muted">Or you can <a class="link" href="#">sync data to Front Dashboard</a> to ensure your data is always up-to-date.</span></li>
+              </ul>
+            </div>
+            <!-- End Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-lg-7 mb-3 mb-lg-5">
+          <!-- Card -->
+          <div class="card h-100">
+            <!-- Header -->
+            <div class="card-header card-header-content-sm-between">
+              <h4 class="card-header-title mb-2 mb-sm-0">Monthly expenses</h4>
+
+              <!-- Nav -->
+              <ul class="nav nav-segment nav-fill" id="expensesTab" role="tablist">
+                <li class="nav-item" data-bs-toggle="chart-bar" data-datasets="thisWeek" data-trigger="click" data-action="toggle">
+                  <a class="nav-link active" href="javascript:;" data-bs-toggle="tab">This week</a>
+                </li>
+                <li class="nav-item" data-bs-toggle="chart-bar" data-datasets="lastWeek" data-trigger="click" data-action="toggle">
+                  <a class="nav-link" href="javascript:;" data-bs-toggle="tab">Last week</a>
+                </li>
+              </ul>
+              <!-- End Nav -->
+            </div>
+            <!-- End Header -->
+
+            <!-- Body -->
+            <div class="card-body">
+              <div class="row mb-4">
+                <div class="col-sm mb-2 mb-sm-0">
+                  <div class="d-flex align-items-center">
+                    <span class="h1 mb-0">35%</span>
+                    <span class="text-success ms-2">
+                      <i class="bi-graph-up"></i> 25.3%
+                    </span>
+                  </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-auto align-self-sm-end">
+                  <div class="row fs-6 text-body">
+                    <div class="col-auto">
+                      <span class="legend-indicator bg-primary"></span> New
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-auto">
+                      <span class="legend-indicator"></span> Overdue
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+
+              <!-- Bar Chart -->
+              <div class="chartjs-custom">
+                <canvas id="updatingBarChart" style="height: 20rem;" data-hs-chartjs-options='{
+                          "type": "bar",
+                          "data": {
+                            "labels": ["May 1", "May 2", "May 3", "May 4", "May 5", "May 6", "May 7", "May 8", "May 9", "May 10"],
+                            "datasets": [{
+                              "data": [200, 300, 290, 350, 150, 350, 300, 100, 125, 220],
+                              "backgroundColor": "#377dff",
+                              "hoverBackgroundColor": "#377dff",
+                              "borderColor": "#377dff",
+                              "maxBarThickness": "10"
+                            },
+                            {
+                              "data": [150, 230, 382, 204, 169, 290, 300, 100, 300, 225, 120],
+                              "backgroundColor": "#e7eaf3",
+                              "borderColor": "#e7eaf3",
+                              "maxBarThickness": "10"
+                            }]
+                          },
+                          "options": {
+                            "scales": {
+                              "y": {
+                                "grid": {
+                                  "color": "#e7eaf3",
+                                  "drawBorder": false,
+                                  "zeroLineColor": "#e7eaf3"
+                                },
+                                "ticks": {
+                                  "beginAtZero": true,
+                                  "stepSize": 100,
+                                  "fontSize": 12,
+                                  "fontColor":  "#97a4af",
+                                  "fontFamily": "Open Sans, sans-serif",
+                                  "padding": 10,
+                                  "postfix": "$"
+                                }
+                              },
+                              "x": {
+                                "grid": {
+                                  "display": false,
+                                  "drawBorder": false
+                                },
+                                "ticks": {
+                                  "fontSize": 12,
+                                  "fontColor":  "#97a4af",
+                                  "fontFamily": "Open Sans, sans-serif",
+                                  "padding": 5
+                                },
+                                "categoryPercentage": 0.5,
+                                "maxBarThickness": "10"
+                              }
+                            },
+                            "cornerRadius": 2,
+                            "plugins": {
+                              "tooltip": {
+                                "prefix": "$",
+                                "hasIndicator": true,
+                                "mode": "index",
+                                "intersect": false
+                              }
+                            },
+                            "hover": {
+                              "mode": "nearest",
+                              "intersect": true
+                            }
+                          }
+                        }'></canvas>
+              </div>
+              <!-- End Bar Chart -->
+            </div>
+            <!-- End Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <!-- Card -->
+      <div class="card mb-3 mb-lg-5">
+        <!-- Header -->
+        <div class="card-header">
+          <div class="row justify-content-between align-items-center flex-grow-1">
+            <div class="col-md">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="card-header-title">Users</h4>
+
+                <!-- Datatable Info -->
+                <div id="datatableCounterInfo" style="display: none;">
+                  <div class="d-flex align-items-center">
+                    <span class="fs-6 me-3">
+                      <span id="datatableCounter">0</span>
+                      Selected
+                    </span>
+                    <a class="btn btn-outline-danger btn-sm" href="javascript:;">
+                      <i class="tio-delete-outlined"></i> Delete
+                    </a>
+                  </div>
+                </div>
+                <!-- End Datatable Info -->
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="col-auto">
+              <!-- Filter -->
+              <div class="row align-items-sm-center">
+                <div class="col-sm-auto">
+                  <div class="row align-items-center gx-0">
+                    <div class="col">
+                      <span class="text-secondary me-2">Status:</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-end">
+                        <select class="js-select js-datatable-filter form-select form-select-sm form-select-borderless" data-target-column-index="2" data-target-table="datatable" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "10rem"
+                                }'>
+                          <option value="null" selected>All</option>
+                          <option value="successful">Successful</option>
+                          <option value="overdue">Overdue</option>
+                          <option value="pending">Pending</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-auto">
+                  <div class="row align-items-center gx-0">
+                    <div class="col">
+                      <span class="text-secondary me-2">Signed up:</span>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-end">
+                        <select class="js-select js-datatable-filter form-select form-select-sm form-select-borderless" data-target-column-index="5" data-target-table="datatable" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "10rem"
+                                }'>
+                          <option value="null" selected>All</option>
+                          <option value="1 year ago">1 year ago</option>
+                          <option value="6 months ago">6 months ago</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                    <!-- End Col -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-md">
+                  <form>
+                    <!-- Search -->
+                    <div class="input-group input-group-merge input-group-flush">
+                      <div class="input-group-prepend input-group-text">
+                        <i class="bi-search"></i>
+                      </div>
+                      <input id="datatableSearch" type="search" class="form-control" placeholder="Search users" aria-label="Search users">
+                    </div>
+                    <!-- End Search -->
+                  </form>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Filter -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Table -->
+        <div class="table-responsive datatable-custom">
+          <table id="datatable" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table" data-hs-datatables-options='{
+                   "columnDefs": [{
+                      "targets": [0, 1, 4],
+                      "orderable": false
+                    }],
+                   "order": [],
+                   "info": {
+                     "totalQty": "#datatableWithPaginationInfoTotalQty"
+                   },
+                   "search": "#datatableSearch",
+                   "entries": "#datatableEntries",
+                   "pageLength": 8,
+                   "isResponsive": false,
+                   "isShowPaging": false,
+                   "pagination": "datatablePagination"
+                 }'>
+            <thead class="thead-light">
+              <tr>
+                <th scope="col" class="table-column-pe-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll">
+                    <label class="form-check-label" for="datatableCheckAll"></label>
+                  </div>
+                </th>
+                <th class="table-column-ps-0">Full name</th>
+                <th>Status</th>
+                <th>Account Balance</th>
+                <th>Email</th>
+                <th>Signed up</th>
+                <th>User ID</th>
+              </tr>
+            </thead>
+
+            <tbody>
+            <?php 
+    $users = getAll('users');
+    if(mysqli_num_rows($users) > 0){
+        foreach($users as $userItem){
+?>
+              <tr>
+                <td class="table-column-pe-0">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="usersDataCheck2">
+                    <label class="form-check-label" for="usersDataCheck2"></label>
+                  </div>
+                </td>
+                <td class="table-column-ps-0">
+                  <a class="d-flex align-items-center" href="user-profile.html">
+                    <div class="flex-shrink-0">
+                      <div class="avatar avatar-sm avatar-circle">
+                        <img class="avatar-img" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                       </div>
                     </div>
-                  </div>
-                  <!-- End Form -->
-
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Email</label>
-                    <div class="col-sm-9">
-                      <input type="email" class="form-control" name="email" value="<?= $user['data']['email']; ?>" id="emailLabel" placeholder="Email" aria-label="Email" value="mark@site.com">
+                    <div class="flex-grow-1 ms-3">
+                      <h5 class="text-inherit mb-0"><?= $userItem['full_name']; ?> <i class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Top endorsed"></i></h5>
                     </div>
-                  </div>
-                  <!-- End Form -->
+                  </a>
+                </td>
+                <td>
+                  <?php if($userItem['status'] == 1): ?>
+                      <p><a href="status-2.php?d_id=<?= $userItem['id']; ?>&status=0"> Active </a></p>
+                  <?php else: ?>
+                      <p><a href="status-2.php?d_id=<?= $userItem['id']; ?>&status=1"> Inactive </a></p>
+                  <?php endif; ?>
+                </td>
 
 
-                  <!-- Role -->
-                  <div class="row mb-4">
-                    <label for="editRoleModalLabel" class="col-sm-3 col-form-label form-label">Role</label>
-                    <div class="col-sm-9">
-                    <select name="role" value="<?= $user['data']['role']; ?>" id="editRoleModalLabel" class="form-select form-select-light">
-                        <option value="">Choose a role</option>
-                        <option value="admin" <?= $user['data']['role'] == 'admin' ? 'selected':'' ?>>Admin</option>
-                        <option value="user" <?= $user['data']['role'] == 'user' ? 'selected':'' ?>>User</option>
-                    </select>
-                    </div>
+                </td>
+                <td>₦<?= $userItem['amount']; ?> </td>
+                <td><?= $userItem['email']; ?> </td>
+                <td><?= $userItem['created_date']; ?> </td>
+                <td><?= $userItem['id']; ?> </td>
+              </tr>
+              <?php
+        }
+    } else {
+?>
+    <tr>
+        <td colspan="6">
+            No Records Found
+        </td>
+    </tr>
+<?php
+    }
+?>
+
+
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <!-- Footer -->
+        <div class="card-footer">
+          <!-- Pagination -->
+          <div class="row justify-content-center justify-content-sm-between align-items-sm-center">
+            <div class="col-sm mb-2 mb-sm-0">
+              <div class="d-flex justify-content-center justify-content-sm-start align-items-center">
+                <span class="me-2">Showing:</span>
+
+                <!-- Select -->
+                <div class="tom-select-custom">
+                  <select id="datatableEntries" class="js-select form-select form-select-borderless w-auto" autocomplete="off" data-hs-tom-select-options='{
+                            "searchInDropdown": false,
+                            "hideSearch": true
+                          }'>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8" selected>8</option>
+                    <option value="12">12</option>
+                  </select>
                 </div>
-                    <!-- End Role -->
+                <!-- End Select -->
 
-                    <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="departmentLabel" class="col-sm-3 col-form-label form-label">Password</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" name="password" value="<?= $user['data']['password']; ?>" id="departmentLabel" placeholder="Your password" aria-label="Your password">
-                    </div>
-                  </div>
-                  <!-- End Form -->
+                <span class="text-secondary me-2">of</span>
 
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="departmentLabel" class="col-sm-3 col-form-label form-label">Top up balance</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" name="amount" value="<?= $user['data']['amount']; ?>" id="departmentLabel" placeholder="Top up account balance" aria-label="Top uup account balance">
-                    </div>
-                  </div>
-                  
-
-                  <div class="d-flex justify-content-end">
-                    <button type="submit" name="saveChanges" class="btn btn-primary">Save changes</button>
-                  </div>
-                  <?php
-                    }else{
-                        echo '<h5>'.$user['message'].'</h5>';
-                    }
-
-                ?>
-                </form>
-                <!-- End Form -->
+                <!-- Pagination Quantity -->
+                <span id="datatableWithPaginationInfoTotalQty"></span>
               </div>
-              <!-- End Body -->
             </div>
-            <!-- End Card -->
+            <!-- End Col -->
 
+            <div class="col-sm-auto">
+              <div class="d-flex justify-content-center justify-content-sm-end">
+                <!-- Pagination -->
+                <nav id="datatablePagination" aria-label="Activity pagination"></nav>
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Pagination -->
+        </div>
+        <!-- End Footer -->
+      </div>
+      <!-- End Card -->
 
+      <div class="row">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <!-- Card -->
+          <div class="card h-100">
+            <!-- Header -->
+            <div class="card-header card-header-content-sm-between">
+              <h4 class="card-header-title mb-2 mb-sm-0">Transactions</h4>
+
+              <!-- Daterangepicker -->
+              <button id="js-daterangepicker-predefined" class="btn btn-ghost-secondary btn-sm dropdown-toggle">
+                <i class="bi-calendar-week"></i>
+                <span class="js-daterangepicker-predefined-preview ms-1"></span>
+              </button>
+              <!-- End Daterangepicker -->
+            </div>
+            <!-- End Header -->
+
+            <!-- Body -->
+            <div class="card-body">
+              <!-- Chart -->
+              <div class="chartjs-custom mx-auto" style="height: 20rem;">
+                <canvas class="js-chart-datalabels" data-hs-chartjs-options='{
+                              "type": "bubble",
+                              "data": {
+                                "datasets": [
+                                  {
+                                    "label": "Label 1",
+                                    "data": [
+                                      {"x": 50, "y": 65, "r": 99}
+                                    ],
+                                    "color": "#fff",
+                                    "backgroundColor": "rgba(55, 125, 255, 0.9)",
+                                    "borderColor": "transparent"
+                                  },
+                                  {
+                                    "label": "Label 2",
+                                    "data": [
+                                      {"x": 46, "y": 42, "r": 65}
+                                    ],
+                                    "color": "#fff",
+                                    "backgroundColor": "rgba(100, 0, 214, 0.8)",
+                                    "borderColor": "transparent"
+                                  },
+                                  {
+                                    "label": "Label 3",
+                                    "data": [
+                                      {"x": 48, "y": 15, "r": 38}
+                                    ],
+                                    "color": "#fff",
+                                    "backgroundColor": "#00c9db",
+                                    "borderColor": "transparent"
+                                  },
+                                  {
+                                    "label": "Label 3",
+                                    "data": [
+                                      {"x": 55, "y": 2, "r": 61}
+                                    ],
+                                    "color": "#fff",
+                                    "backgroundColor": "#4338ca",
+                                    "borderColor": "transparent"
+                                  }
+                                ]
+                              },
+                              "options": {
+                                "scales": {
+                                  "y": {
+                                    "grid": {
+                                      "display": false,
+                                      "drawBorder": false
+                                    },
+                                    "ticks": {
+                                      "display": false,
+                                      "max": 100,
+                                      "beginAtZero": true
+                                    }
+                                  },
+                                  "x": {
+                                  "grid": {
+                                      "display": false,
+                                      "drawBorder": false
+                                    },
+                                    "ticks": {
+                                      "display": false,
+                                      "max": 100,
+                                      "beginAtZero": true
+                                    }
+                                  }
+                                },
+                                "plugins": {
+                                  "tooltip": false
+                                }
+                              }
+                            }'></canvas>
+              </div>
+              <!-- End Chart -->
+
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <span class="legend-indicator bg-primary"></span> New
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <span class="legend-indicator" style="background-color: #7000f2;"></span> Pending
+                </div>
+                <!-- End Col -->
+
+                <div class="col-auto">
+                  <span class="legend-indicator bg-info"></span> Failed
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Card -->
+          <div class="card h-100">
+            <!-- Header -->
+            <div class="card-header card-header-content-between">
+              <h4 class="card-header-title">Reports overview</h4>
+
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm rounded-circle" id="reportsOverviewDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi-three-dots-vertical"></i>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="reportsOverviewDropdown1">
+                  <span class="dropdown-header">Settings</span>
+
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-share-fill dropdown-item-icon"></i> Share reports
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-download dropdown-item-icon"></i> Download
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-alt dropdown-item-icon"></i> Connect other apps
+                  </a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <span class="dropdown-header">Feedback</span>
+
+                  <a class="dropdown-item" href="#">
+                    <i class="bi-chat-left-dots dropdown-item-icon"></i> Report
+                  </a>
+                </div>
+              </div>
+              <!-- End Dropdown -->
+            </div>
+            <!-- End Header -->
+
+            <!-- Body -->
+            <div class="card-body">
+              <span class="h1 d-block mb-4">$7,431.14 USD</span>
+
+              <!-- Progress -->
+              <div class="progress rounded-pill mb-2">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="Gross value"></div>
+                <div class="progress-bar opacity-50" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="Net volume from sales"></div>
+                <div class="progress-bar opacity-25" role="progressbar" style="width: 9%" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top" title="New volume from sales"></div>
+              </div>
+
+              <div class="d-flex justify-content-between mb-4">
+                <span>0%</span>
+                <span>100%</span>
+              </div>
+              <!-- End Progress -->
+
+              <!-- Table -->
+              <div class="table-responsive">
+                <table class="table table-lg table-nowrap card-table mb-0">
+                  <tr>
+                    <th scope="row">
+                      <span class="legend-indicator bg-primary"></span>Gross value
+                    </th>
+                    <td>$3,500.71</td>
+                    <td>
+                      <span class="badge bg-soft-success text-success">+12.1%</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <span class="legend-indicator bg-primary opacity-50"></span>Net volume from sales
+                    </th>
+                    <td>$2,980.45</td>
+                    <td>
+                      <span class="badge bg-soft-warning text-warning">+6.9%</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <span class="legend-indicator bg-primary opacity-25"></span>New volume from sales
+                    </th>
+                    <td>$950.00</td>
+                    <td>
+                      <span class="badge bg-soft-danger text-danger">-1.5%</span>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <span class="legend-indicator"></span>Other
+                    </th>
+                    <td>32</td>
+                    <td>
+                      <span class="badge bg-soft-success text-success">1.9%</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- End Table -->
+            </div>
+            <!-- End Body -->
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+    </div>
     <!-- End Content -->
 
     <!-- Footer -->
@@ -1307,7 +2235,7 @@
     <div class="footer">
       <div class="row justify-content-between align-items-center">
         <div class="col">
-          <p class="fs-6 mb-0">&copy; Front. <span class="d-none d-sm-inline-block">2022 SportOdd.</span></p>
+          <p class="fs-6 mb-0">&copy; Front. <span class="d-none d-sm-inline-block">2022 Htmlstream.</span></p>
         </div>
         <!-- End Col -->
 
@@ -1365,7 +2293,7 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layoutSkinsRadio" id="layoutSkinsRadio1" checked value="default">
             <label class="form-check-label mb-2" for="layoutSkinsRadio1">
-              <img class="form-check-img" src="assets/img/415x310/img1.jpg" alt="Image Description">
+              <img class="form-check-img" src="/assets/img/415x310/img1.jpg" alt="Image Description">
             </label>
             <span class="form-check-text">Default</span>
           </div>
@@ -1377,7 +2305,7 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layoutSkinsRadio" id="layoutSkinsRadio2" value="dark">
             <label class="form-check-label mb-2" for="layoutSkinsRadio2">
-              <img class="form-check-img" src="assets/img/415x310/img2.jpg" alt="Image Description">
+              <img class="form-check-img" src="/assets/img/415x310/img2.jpg" alt="Image Description">
             </label>
             <span class="form-check-text">Dark Mode</span>
           </div>
@@ -1394,8 +2322,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layout" id="navbarLayoutSkinsRadio1" checked value="default">
             <label class="form-check-label mb-2" for="navbarLayoutSkinsRadio1">
-              <img class="form-check-img" src="assets/svg/layouts-light/sidebar-default.svg" alt="Image Description" data-hs-theme-appearance="dark">
-              <img class="form-check-img" src="assets/svg/layouts/sidebar-default.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/sidebar-default.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/sidebar-default.svg" alt="Image Description" data-hs-theme-appearance="default">
             </label>
             <span class="form-check-text">Default</span>
           </div>
@@ -1407,8 +2335,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layout" id="navbarLayoutSkinsRadio2" value="navbar-dark">
             <label class="form-check-label mb-2" for="navbarLayoutSkinsRadio2">
-              <img class="form-check-img" src="assets/svg/layouts-light/sidebar-dark.svg" alt="Image Description" data-hs-theme-appearance="dark">
-              <img class="form-check-img" src="assets/svg/layouts/sidebar-dark.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/sidebar-dark.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/sidebar-dark.svg" alt="Image Description" data-hs-theme-appearance="default">
             </label>
             <span class="form-check-text">Dark</span>
           </div>
@@ -1428,8 +2356,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="sidebarNavOptions" id="sidebarNavOptions1" value="pills" checked>
             <label class="form-check-label mb-2" for="sidebarNavOptions1">
-              <img class="form-check-img" src="assets/svg/layouts-light/demo-layouts-default-classic.svg" alt="Image Description" data-hs-theme-appearance="dark">
-              <img class="form-check-img" src="assets/svg/layouts/demo-layouts-default-classic.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/demo-layouts-default-classic.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/demo-layouts-default-classic.svg" alt="Image Description" data-hs-theme-appearance="default">
             </label>
             <span class="form-check-text">Pills</span>
           </div>
@@ -1441,8 +2369,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="sidebarNavOptions" id="sidebarNavOptions2" value="tabs">
             <label class="form-check-label mb-2" for="sidebarNavOptions2">
-              <img class="form-check-img" src="assets/svg/layouts-light/demo-layouts-nav-tabs.svg" alt="Image Description" data-hs-theme-appearance="dark">
-              <img class="form-check-img" src="assets/svg/layouts/demo-layouts-nav-tabs.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/demo-layouts-nav-tabs.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/demo-layouts-nav-tabs.svg" alt="Image Description" data-hs-theme-appearance="default">
             </label>
             <span class="form-check-text">Tabs</span>
           </div>
@@ -1471,8 +2399,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layout" id="headerLayoutOptions1" value="single-header">
             <label class="form-check-label mb-2" for="headerLayoutOptions1">
-              <img class="form-check-img" src="assets/svg/layouts/header-default-container.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img class="form-check-img" src="assets/svg/layouts-light/header-default-container.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/header-default-container.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/header-default-container.svg" alt="Image Description" data-hs-theme-appearance="dark">
             </label>
             <span class="form-check-text">Default</span>
           </div>
@@ -1484,8 +2412,8 @@
           <div class="form-check form-check-label-highlighter text-center">
             <input type="radio" class="form-check-input" name="layout" id="headerLayoutOptions2" value="double-header">
             <label class="form-check-label mb-2" for="headerLayoutOptions2">
-              <img class="form-check-img" src="assets/svg/layouts/header-double-line-container.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img class="form-check-img" src="assets/svg/layouts-light/header-double-line-container.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="form-check-img" src="/assets/svg/layouts/header-double-line-container.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="form-check-img" src="/assets/svg/layouts-light/header-double-line-container.svg" alt="Image Description" data-hs-theme-appearance="dark">
             </label>
             <span class="form-check-text">Double line</span>
           </div>
@@ -1540,8 +2468,8 @@
             <!-- Logo -->
 
             <a class="navbar-brand" href="index.html" aria-label="Front">
-              <img class="navbar-brand-logo" src="assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
-              <img class="navbar-brand-logo" src="assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
+              <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo" data-hs-theme-appearance="default">
+              <img class="navbar-brand-logo" src="/assets/svg/logos-light/logo.svg" alt="Logo" data-hs-theme-appearance="dark">
             </a>
 
             <!-- End Logo -->
@@ -1623,7 +2551,7 @@
                                           <label class="form-check-label" for="notificationCheck1"></label>
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
-                                        <img class="avatar avatar-sm avatar-circle" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                        <img class="avatar avatar-sm avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description">
                                       </div>
                                     </div>
                                     <!-- End Col -->
@@ -1689,7 +2617,7 @@
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
                                         <div class="avatar avatar-sm avatar-circle">
-                                          <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                                          <img class="avatar-img" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                                         </div>
                                       </div>
                                     </div>
@@ -1721,7 +2649,7 @@
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
                                         <div class="avatar avatar-sm avatar-circle">
-                                          <img class="avatar-img" src="assets/svg/brands/google-icon.svg" alt="Image Description">
+                                          <img class="avatar-img" src="/assets/svg/brands/google-icon.svg" alt="Image Description">
                                         </div>
                                       </div>
                                     </div>
@@ -1753,7 +2681,7 @@
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
                                         <div class="avatar avatar-sm avatar-circle">
-                                          <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                                          <img class="avatar-img" src="/assets/img/160x160/img7.jpg" alt="Image Description">
                                         </div>
                                       </div>
                                     </div>
@@ -1823,7 +2751,7 @@
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
                                         <div class="avatar avatar-sm avatar-circle">
-                                          <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                          <img class="avatar-img" src="/assets/img/160x160/img5.jpg" alt="Image Description">
                                         </div>
                                       </div>
                                     </div>
@@ -1887,7 +2815,7 @@
                                           <span class="form-check-stretched-bg"></span>
                                         </div>
                                         <div class="avatar avatar-sm avatar-circle">
-                                          <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
+                                          <img class="avatar-img" src="/assets/img/160x160/img8.jpg" alt="Image Description">
                                         </div>
                                       </div>
                                     </div>
@@ -1978,7 +2906,7 @@
                           <a class="dropdown-item" href="#">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/atlassian-icon.svg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/atlassian-icon.svg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-3">
                                 <h5 class="mb-0">Atlassian</h5>
@@ -1990,7 +2918,7 @@
                           <a class="dropdown-item" href="#">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/slack-icon.svg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/slack-icon.svg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-3">
                                 <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
@@ -2002,7 +2930,7 @@
                           <a class="dropdown-item" href="#">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-3">
                                 <h5 class="mb-0">Google webdev</h5>
@@ -2014,7 +2942,7 @@
                           <a class="dropdown-item" href="#">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/frontapp-icon.svg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/frontapp-icon.svg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-3">
                                 <h5 class="mb-0">Frontapp</h5>
@@ -2026,7 +2954,7 @@
                           <a class="dropdown-item" href="#">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-4x3" src="assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-3">
                                 <h5 class="mb-0">HS Support</h5>
@@ -2101,7 +3029,7 @@
                   <div class="dropdown">
                     <a class="navbar-dropdown-account-wrapper" href="javascript:;" id="accountNavbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
                       <div class="avatar avatar-sm avatar-circle">
-                        <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                         <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                       </div>
                     </a>
@@ -2110,7 +3038,7 @@
                       <div class="dropdown-item-text">
                         <div class="d-flex align-items-center">
                           <div class="avatar avatar-sm avatar-circle">
-                            <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                            <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                           </div>
                           <div class="flex-grow-1 ms-3">
                             <h5 class="mb-0">Mark Williams</h5>
@@ -2459,7 +3387,7 @@
             <div class="navbar-nav-wrap">
               <!-- Logo -->
               <a class="navbar-brand" href="index.html" aria-label="Front">
-                <img class="navbar-brand-logo" src="assets/svg/logos/logo-white.svg" alt="Logo">
+                <img class="navbar-brand-logo" src="/assets/svg/logos/logo-white.svg" alt="Logo">
               </a>
               <!-- End Logo -->
 
@@ -2476,12 +3404,12 @@
                         </div>
 
                         <input type="search" class="js-form-search form-control" placeholder="Search in front" aria-label="Search in front" data-hs-form-search-options='{
-                               "clearIcon": "#clearSearchResultsIcon",
-                               "dropMenuElement": "#searchDropdownMenu",
-                               "dropMenuOffset": 20,
-                               "toggleIconOnFocus": true,
-                               "activeClass": "focus"
-                             }'>
+                                 "clearIcon": "#clearSearchResultsIcon",
+                                 "dropMenuElement": "#searchDropdownMenu",
+                                 "dropMenuOffset": 20,
+                                 "toggleIconOnFocus": true,
+                                 "activeClass": "focus"
+                               }'>
                         <a class="input-group-append input-group-text" href="javascript:;">
                           <i id="clearSearchResultsIcon" class="bi-x-lg" style="display: none;"></i>
                         </a>
@@ -2489,12 +3417,12 @@
                     </div>
 
                     <button class="js-form-search js-form-search-mobile-toggle btn btn-ghost-secondary btn-icon rounded-circle d-lg-none" type="button" data-hs-form-search-options='{
-                               "clearIcon": "#clearSearchResultsIcon",
-                               "dropMenuElement": "#searchDropdownMenu",
-                               "dropMenuOffset": 20,
-                               "toggleIconOnFocus": true,
-                               "activeClass": "focus"
-                             }'>
+                                 "clearIcon": "#clearSearchResultsIcon",
+                                 "dropMenuElement": "#searchDropdownMenu",
+                                 "dropMenuOffset": 20,
+                                 "toggleIconOnFocus": true,
+                                 "activeClass": "focus"
+                               }'>
                       <i class="bi-search"></i>
                     </button>
                     <!-- End Input Group -->
@@ -2567,7 +3495,7 @@
                           <a class="dropdown-item" href="index.html">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-circle" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-circle" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-2">
                                 <span>Amanda Harvey <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></span>
@@ -2578,7 +3506,7 @@
                           <a class="dropdown-item" href="index.html">
                             <div class="d-flex align-items-center">
                               <div class="flex-shrink-0">
-                                <img class="avatar avatar-xs avatar-circle" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                <img class="avatar avatar-xs avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description">
                               </div>
                               <div class="flex-grow-1 text-truncate ms-2">
                                 <span>David Harrison</span>
@@ -2694,7 +3622,7 @@
                                             <label class="form-check-label" for="notificationCheck1"></label>
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
-                                          <img class="avatar avatar-sm avatar-circle" src="assets/img/160x160/img3.jpg" alt="Image Description">
+                                          <img class="avatar avatar-sm avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description">
                                         </div>
                                       </div>
                                       <!-- End Col -->
@@ -2760,7 +3688,7 @@
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
                                           <div class="avatar avatar-sm avatar-circle">
-                                            <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Image Description">
+                                            <img class="avatar-img" src="/assets/img/160x160/img10.jpg" alt="Image Description">
                                           </div>
                                         </div>
                                       </div>
@@ -2792,7 +3720,7 @@
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
                                           <div class="avatar avatar-sm avatar-circle">
-                                            <img class="avatar-img" src="assets/svg/brands/google-icon.svg" alt="Image Description">
+                                            <img class="avatar-img" src="/assets/svg/brands/google-icon.svg" alt="Image Description">
                                           </div>
                                         </div>
                                       </div>
@@ -2824,7 +3752,7 @@
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
                                           <div class="avatar avatar-sm avatar-circle">
-                                            <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+                                            <img class="avatar-img" src="/assets/img/160x160/img7.jpg" alt="Image Description">
                                           </div>
                                         </div>
                                       </div>
@@ -2894,7 +3822,7 @@
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
                                           <div class="avatar avatar-sm avatar-circle">
-                                            <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+                                            <img class="avatar-img" src="/assets/img/160x160/img5.jpg" alt="Image Description">
                                           </div>
                                         </div>
                                       </div>
@@ -2958,7 +3886,7 @@
                                             <span class="form-check-stretched-bg"></span>
                                           </div>
                                           <div class="avatar avatar-sm avatar-circle">
-                                            <img class="avatar-img" src="assets/img/160x160/img8.jpg" alt="Image Description">
+                                            <img class="avatar-img" src="/assets/img/160x160/img8.jpg" alt="Image Description">
                                           </div>
                                         </div>
                                       </div>
@@ -3049,7 +3977,7 @@
                             <a class="dropdown-item" href="#">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/atlassian-icon.svg" alt="Image Description">
+                                  <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/atlassian-icon.svg" alt="Image Description">
                                 </div>
                                 <div class="flex-grow-1 text-truncate ms-3">
                                   <h5 class="mb-0">Atlassian</h5>
@@ -3061,7 +3989,7 @@
                             <a class="dropdown-item" href="#">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/slack-icon.svg" alt="Image Description">
+                                  <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/slack-icon.svg" alt="Image Description">
                                 </div>
                                 <div class="flex-grow-1 text-truncate ms-3">
                                   <h5 class="mb-0">Slack <span class="badge bg-primary rounded-pill text-uppercase ms-1">Try</span></h5>
@@ -3073,7 +4001,7 @@
                             <a class="dropdown-item" href="#">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
+                                  <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/google-webdev-icon.svg" alt="Image Description">
                                 </div>
                                 <div class="flex-grow-1 text-truncate ms-3">
                                   <h5 class="mb-0">Google webdev</h5>
@@ -3085,7 +4013,7 @@
                             <a class="dropdown-item" href="#">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <img class="avatar avatar-xs avatar-4x3" src="assets/svg/brands/frontapp-icon.svg" alt="Image Description">
+                                  <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/brands/frontapp-icon.svg" alt="Image Description">
                                 </div>
                                 <div class="flex-grow-1 text-truncate ms-3">
                                   <h5 class="mb-0">Frontapp</h5>
@@ -3097,7 +4025,7 @@
                             <a class="dropdown-item" href="#">
                               <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                  <img class="avatar avatar-xs avatar-4x3" src="assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                                  <img class="avatar avatar-xs avatar-4x3" src="/assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
                                 </div>
                                 <div class="flex-grow-1 text-truncate ms-3">
                                   <h5 class="mb-0">HS Support</h5>
@@ -3172,7 +4100,7 @@
                     <div class="dropdown">
                       <a class="navbar-dropdown-account-wrapper" href="javascript:;" id="accountNavbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" data-bs-dropdown-animation>
                         <div class="avatar avatar-sm avatar-circle">
-                          <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                          <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                           <span class="avatar-status avatar-sm-status avatar-status-success"></span>
                         </div>
                       </a>
@@ -3181,7 +4109,7 @@
                         <div class="dropdown-item-text">
                           <div class="d-flex align-items-center">
                             <div class="avatar avatar-sm avatar-circle">
-                              <img class="avatar-img" src="assets/img/160x160/img6.jpg" alt="Image Description">
+                              <img class="avatar-img" src="/assets/img/160x160/img6.jpg" alt="Image Description">
                             </div>
                             <div class="flex-grow-1 ms-3">
                               <h5 class="mb-0">Mark Williams</h5>
@@ -3530,11 +4458,12 @@
     </div>
   </div>
 
-  <script src="assets/js/demo.js"></script>
+  <script src="/assets/js/demo.js"></script>
 
   <!-- END ONLY DEV -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
+
   <!-- Keyboard Shortcuts -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts" aria-labelledby="offcanvasKeyboardShortcutsLabel">
     <div class="offcanvas-header">
@@ -3995,7 +4924,7 @@
         <li class="step-item">
           <div class="step-content-wrapper">
             <div class="step-avatar">
-              <img class="step-avatar" src="assets/img/160x160/img9.jpg" alt="Image Description">
+              <img class="step-avatar" src="/assets/img/160x160/img9.jpg" alt="Image Description">
             </div>
 
             <div class="step-content">
@@ -4011,7 +4940,7 @@
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs" src="assets/svg/brands/excel-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs" src="/assets/svg/brands/excel-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
                           <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -4026,7 +4955,7 @@
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img class="avatar avatar-xs" src="assets/svg/brands/word-icon.svg" alt="Image Description">
+                          <img class="avatar avatar-xs" src="/assets/svg/brands/word-icon.svg" alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
                           <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -4068,7 +4997,7 @@
         <li class="step-item">
           <div class="step-content-wrapper">
             <div class="step-avatar">
-              <img class="step-avatar-img" src="assets/img/160x160/img3.jpg" alt="Image Description">
+              <img class="step-avatar-img" src="/assets/img/160x160/img3.jpg" alt="Image Description">
             </div>
 
             <div class="step-content">
@@ -4080,13 +5009,13 @@
                 <li class="list-group-item list-group-item-light">
                   <div class="row gx-1">
                     <div class="col">
-                      <img class="img-fluid rounded" src="assets/svg/components/card-1.svg" alt="Image Description">
+                      <img class="img-fluid rounded" src="/assets/svg/components/card-1.svg" alt="Image Description">
                     </div>
                     <div class="col">
-                      <img class="img-fluid rounded" src="assets/svg/components/card-2.svg" alt="Image Description">
+                      <img class="img-fluid rounded" src="/assets/svg/components/card-2.svg" alt="Image Description">
                     </div>
                     <div class="col">
-                      <img class="img-fluid rounded" src="assets/svg/components/card-3.svg" alt="Image Description">
+                      <img class="img-fluid rounded" src="/assets/svg/components/card-3.svg" alt="Image Description">
                     </div>
                     <div class="col-auto align-self-center">
                       <div class="text-center">
@@ -4123,7 +5052,7 @@
         <li class="step-item">
           <div class="step-content-wrapper">
             <div class="step-avatar">
-              <img class="step-avatar-img" src="assets/img/160x160/img7.jpg" alt="Image Description">
+              <img class="step-avatar-img" src="/assets/img/160x160/img7.jpg" alt="Image Description">
             </div>
 
             <div class="step-content">
@@ -4141,7 +5070,7 @@
         <li class="step-item">
           <div class="step-content-wrapper">
             <div class="step-avatar">
-              <img class="step-avatar-img" src="assets/img/160x160/img5.jpg" alt="Image Description">
+              <img class="step-avatar-img" src="/assets/img/160x160/img5.jpg" alt="Image Description">
             </div>
 
             <div class="step-content">
@@ -4198,8 +5127,8 @@
         <div class="modal-body p-sm-5">
           <div class="text-center">
             <div class="w-75 w-sm-50 mx-auto mb-4">
-              <img class="img-fluid" src="assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img class="img-fluid" src="assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img class="img-fluid" src="/assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img class="img-fluid" src="/assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
             </div>
 
             <h4 class="h1">Welcome to Front</h4>
@@ -4216,16 +5145,16 @@
           <div class="w-85 mx-auto">
             <div class="row justify-content-between">
               <div class="col">
-                <img class="img-fluid" src="assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+                <img class="img-fluid" src="/assets/svg/brands/gitlab-gray.svg" alt="Image Description">
               </div>
               <div class="col">
-                <img class="img-fluid" src="assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+                <img class="img-fluid" src="/assets/svg/brands/fitbit-gray.svg" alt="Image Description">
               </div>
               <div class="col">
-                <img class="img-fluid" src="assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+                <img class="img-fluid" src="/assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
               </div>
               <div class="col">
-                <img class="img-fluid" src="assets/svg/brands/layar-gray.svg" alt="Image Description">
+                <img class="img-fluid" src="/assets/svg/brands/layar-gray.svg" alt="Image Description">
               </div>
             </div>
           </div>
@@ -4236,17 +5165,341 @@
   </div>
 
   <!-- End Welcome Message Modal -->
+
+  <!-- Create a new user Modal -->
+  <div class="modal fade" id="inviteUserModal" tabindex="-1" aria-labelledby="inviteUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="inviteUserModalLabel">Invite users</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <!-- Form -->
+          <div class="mb-4">
+            <div class="input-group mb-2 mb-sm-0">
+              <input type="text" class="form-control" name="fullName" placeholder="Search name or emails" aria-label="Search name or emails">
+
+              <div class="input-group-append input-group-append-last-sm-down-none">
+                <!-- Select -->
+                <div class="tom-select-custom tom-select-custom-end">
+                  <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                            "searchInDropdown": false,
+                            "hideSearch": true,
+                            "dropdownWidth": "11rem"
+                          }'>
+                    <option value="guest" selected>Guest</option>
+                    <option value="can edit">Can edit</option>
+                    <option value="can comment">Can comment</option>
+                    <option value="full access">Full access</option>
+                  </select>
+                </div>
+                <!-- End Select -->
+
+                <a class="btn btn-primary d-none d-sm-inline-block" href="javascript:;">Invite</a>
+              </div>
+            </div>
+
+            <a class="btn btn-primary w-100 d-sm-none" href="javascript:;">Invite</a>
+          </div>
+          <!-- End Form -->
+
+          <div class="row">
+            <h5 class="col modal-title">Invite users</h5>
+
+            <div class="col-auto">
+              <a class="d-flex align-items-center small text-body" href="#">
+                <img class="avatar avatar-xss avatar-4x3 me-2" src="/assets/svg/brands/gmail-icon.svg" alt="Image Description">
+                Import contacts
+              </a>
+            </div>
+          </div>
+
+          <hr class="mt-2">
+
+          <ul class="list-unstyled list-py-2 mb-0">
+            <!-- List Group Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="/assets/img/160x160/img10.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="mb-0">Amanda Harvey <i class="bi-patch-check-fill text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></h5>
+                      <span class="d-block small">amanda@site.com</span>
+                    </div>
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest" selected>Guest</option>
+                          <option value="can edit">Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End List Group Item -->
+
+            <!-- List Group Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="/assets/img/160x160/img3.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="mb-0">David Harrison</h5>
+                      <span class="d-block small">david@site.com</span>
+                    </div>
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest" selected>Guest</option>
+                          <option value="can edit">Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End List Group Item -->
+
+            <!-- List Group Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-circle">
+                    <img class="avatar-img" src="/assets/img/160x160/img9.jpg" alt="Image Description">
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="mb-0">Ella Lauda <i class="bi-patch-check-fill text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></h5>
+                      <span class="d-block small">Markvt@site.com</span>
+                    </div>
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest" selected>Guest</option>
+                          <option value="can edit">Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End List Group Item -->
+
+            <!-- List Group Item -->
+            <li>
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                    <span class="avatar-initials">B</span>
+                  </div>
+                </div>
+
+                <div class="flex-grow-1 ms-3">
+                  <div class="row align-items-center">
+                    <div class="col-sm">
+                      <h5 class="mb-0">Bob Dean</h5>
+                      <span class="d-block small">bob@site.com</span>
+                    </div>
+
+                    <div class="col-sm-auto">
+                      <!-- Select -->
+                      <div class="tom-select-custom tom-select-custom-sm-end">
+                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
+                                  "searchInDropdown": false,
+                                  "hideSearch": true,
+                                  "dropdownWidth": "11rem"
+                                }'>
+                          <option value="guest" selected>Guest</option>
+                          <option value="can edit">Can edit</option>
+                          <option value="can comment">Can comment</option>
+                          <option value="full access">Full access</option>
+                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
+                        </select>
+                      </div>
+                      <!-- End Select -->
+                    </div>
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+            </li>
+            <!-- End List Group Item -->
+          </ul>
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <div class="row align-items-center flex-grow-1 mx-n2">
+            <div class="col-sm-9 mb-2 mb-sm-0">
+              <input type="hidden" id="inviteUserPublicClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
+
+              <p class="modal-footer-text">The public share <a href="#">link settings</a>
+                <i class="bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The public share link allows people to view the project without giving access to full collaboration features."></i>
+              </p>
+            </div>
+
+            <div class="col-sm-3 text-sm-end">
+              <a class="js-clipboard btn btn-white btn-sm text-nowrap" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard!" data-hs-clipboard-options='{
+                  "type": "tooltip",
+                  "successText": "Copied!",
+                  "contentTarget": "#inviteUserPublicClipboard",
+                  "container": "#inviteUserModal"
+                 }'>
+                <i class="bi-link-45deg me-1"></i> Copy link</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+  <!-- End Create a new user Modal -->
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- JS Implementing Plugins -->
-  <script src="assets/js/vendor.min.js"></script>
+  <script src="/assets/js/vendor.min.js"></script>
+
+  <script src="/assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
 
   <!-- JS Front -->
-  <script src="assets/js/theme.min.js"></script>
+  <script src="/assets/js/theme.min.js"></script>
+  <script src="/assets/js/hs.theme-appearance-charts.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF DATERANGEPICKER
+      // =======================================================
+      $('.js-daterangepicker').daterangepicker();
+
+      $('.js-daterangepicker-times').daterangepicker({
+        timePicker: true,
+        startDate: moment().startOf('hour'),
+        endDate: moment().startOf('hour').add(32, 'hour'),
+        locale: {
+          format: 'M/DD hh:mm A'
+        }
+      });
+
+      var start = moment();
+      var end = moment();
+
+      function cb(start, end) {
+        $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      }
+
+      $('#js-daterangepicker-predefined').daterangepicker({
+        startDate: start,
+        endDate: end,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(start, end);
+    });
+
+
+    // INITIALIZATION OF DATATABLES
+    // =======================================================
+    HSCore.components.HSDatatables.init($('#datatable'), {
+      select: {
+        style: 'multi',
+        selector: 'td:first-child input[type="checkbox"]',
+        classMap: {
+          checkAll: '#datatableCheckAll',
+          counter: '#datatableCounter',
+          counterInfo: '#datatableCounterInfo'
+        }
+      },
+      language: {
+        zeroRecords: `<div class="text-center p-4">
+              <img class="mb-3" src=".//assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="default">
+              <img class="mb-3" src=".//assets/svg/illustrations-light/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="dark">
+            <p class="mb-0">No data to show</p>
+            </div>`
+      }
+    });
+
+    const datatable = HSCore.components.HSDatatables.getItem(0)
+
+    document.querySelectorAll('.js-datatable-filter').forEach(function (item) {
+      item.addEventListener('change',function(e) {
+        const elVal = e.target.value,
+    targetColumnIndex = e.target.getAttribute('data-target-column-index'),
+    targetTable = e.target.getAttribute('data-target-table');
+
+    HSCore.components.HSDatatables.getItem(targetTable).column(targetColumnIndex).search(elVal !== 'null' ? elVal : '').draw()
+      })
+    })
+  </script>
 
   <!-- JS Plugins Init. -->
   <script>
     (function() {
+      localStorage.removeItem('hs_theme')
+
       window.onload = function () {
         
 
@@ -4257,7 +5510,21 @@
 
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
-        new HSFormSearch('.js-form-search')
+        const HSFormSearchInstance = new HSFormSearch('.js-form-search')
+
+        if (HSFormSearchInstance.collection.length) {
+          HSFormSearchInstance.getItem(1).on('close', function (el) {
+            el.classList.remove('top-0')
+          })
+
+          document.querySelector('.js-form-search-mobile-toggle').addEventListener('click', e => {
+            let dataOptions = JSON.parse(e.currentTarget.getAttribute('data-hs-form-search-options')),
+              $menu = document.querySelector(dataOptions.dropMenuElement)
+
+            $menu.classList.add('top-0')
+            $menu.style.left = 0
+          })
+        }
 
 
         // INITIALIZATION OF BOOTSTRAP DROPDOWN
@@ -4265,39 +5532,118 @@
         HSBsDropdown.init()
 
 
+        // INITIALIZATION OF CHARTJS
+        // =======================================================
+        HSCore.components.HSChartJS.init('.js-chart')
+
+
+        // INITIALIZATION OF CHARTJS
+        // =======================================================
+        HSCore.components.HSChartJS.init('#updatingBarChart')
+        const updatingBarChart = HSCore.components.HSChartJS.getItem('updatingBarChart')
+
+        // Call when tab is clicked
+        document.querySelectorAll('[data-bs-toggle="chart-bar"]').forEach(item => {
+          item.addEventListener('click', e => {
+            let keyDataset = e.currentTarget.getAttribute('data-datasets')
+
+            const styles = HSCore.components.HSChartJS.getTheme('updatingBarChart', HSThemeAppearance.getAppearance())
+
+            if (keyDataset === 'lastWeek') {
+              updatingBarChart.data.labels = ["Apr 22", "Apr 23", "Apr 24", "Apr 25", "Apr 26", "Apr 27", "Apr 28", "Apr 29", "Apr 30", "Apr 31"];
+              updatingBarChart.data.datasets = [
+                {
+                  "data": [120, 250, 300, 200, 300, 290, 350, 100, 125, 320],
+                  "backgroundColor": styles.data.datasets[0].backgroundColor,
+                  "hoverBackgroundColor": styles.data.datasets[0].hoverBackgroundColor,
+                  "borderColor": styles.data.datasets[0].borderColor,
+                  "maxBarThickness": 10
+                },
+                {
+                  "data": [250, 130, 322, 144, 129, 300, 260, 120, 260, 245, 110],
+                  "backgroundColor": styles.data.datasets[1].backgroundColor,
+                  "borderColor": styles.data.datasets[1].borderColor,
+                  "maxBarThickness": 10
+                }
+              ];
+              updatingBarChart.update();
+            } else {
+              updatingBarChart.data.labels = ["May 1", "May 2", "May 3", "May 4", "May 5", "May 6", "May 7", "May 8", "May 9", "May 10"];
+              updatingBarChart.data.datasets = [
+                {
+                  "data": [200, 300, 290, 350, 150, 350, 300, 100, 125, 220],
+                  "backgroundColor": styles.data.datasets[0].backgroundColor,
+                  "hoverBackgroundColor": styles.data.datasets[0].hoverBackgroundColor,
+                  "borderColor": styles.data.datasets[0].borderColor,
+                  "maxBarThickness": 10
+                },
+                {
+                  "data": [150, 230, 382, 204, 169, 290, 300, 100, 300, 225, 120],
+                  "backgroundColor": styles.data.datasets[1].backgroundColor,
+                  "borderColor": styles.data.datasets[1].borderColor,
+                  "maxBarThickness": 10
+                }
+              ]
+              updatingBarChart.update();
+            }
+          })
+        })
+
+
+        // INITIALIZATION OF CHARTJS
+        // =======================================================
+        HSCore.components.HSChartJS.init('.js-chart-datalabels', {
+          plugins: [ChartDataLabels],
+          options: {
+            plugins: {
+              datalabels: {
+                anchor: function (context) {
+                  var value = context.dataset.data[context.dataIndex];
+                  return value.r < 20 ? 'end' : 'center';
+                },
+                align: function (context) {
+                  var value = context.dataset.data[context.dataIndex];
+                  return value.r < 20 ? 'end' : 'center';
+                },
+                color: function (context) {
+                  var value = context.dataset.data[context.dataIndex];
+                  return value.r < 20 ? context.dataset.backgroundColor : context.dataset.color;
+                },
+                font: function (context) {
+                  var value = context.dataset.data[context.dataIndex],
+                    fontSize = 25;
+
+                  if (value.r > 50) {
+                    fontSize = 35;
+                  }
+
+                  if (value.r > 70) {
+                    fontSize = 55;
+                  }
+
+                  return {
+                    weight: 'lighter',
+                    size: fontSize
+                  };
+                },
+                formatter: function (value) {
+                  return value.r
+                },
+                offset: 2,
+                padding: 0
+              }
+            },
+          }
+        })
+
         // INITIALIZATION OF SELECT
         // =======================================================
         HSCore.components.HSTomSelect.init('.js-select')
 
 
-        // INITIALIZATION OF INPUT MASK
+        // INITIALIZATION OF CLIPBOARD
         // =======================================================
-        HSCore.components.HSMask.init('.js-input-mask')
-
-
-        // INITIALIZATION OF FILE ATTACHMENT
-        // =======================================================
-        new HSFileAttach('.js-file-attach')
-
-
-        // INITIALIZATION OF STICKY BLOCKS
-        // =======================================================
-        new HSStickyBlock('.js-sticky-block', {
-          targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
-        })
-
-
-        // SCROLLSPY
-        // =======================================================
-        new bootstrap.ScrollSpy(document.body, {
-          target: '#navbarSettings',
-          offset: 100
-        })
-
-        new HSScrollspy('#navbarVerticalNavMenu', {
-          breakpoint: 'lg',
-          scrollOffset: -20
-        })
+        HSCore.components.HSClipboard.init('.js-clipboard')
       }
     })()
   </script>
@@ -4343,5 +5689,5 @@
   <!-- End Style Switcher JS -->
 </body>
 
-<!-- Mirrored from htmlstream.com/preview/front-dashboard-v2.1.1/account-settings.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Apr 2024 20:10:28 GMT -->
+<!-- Mirrored from htmlstream.com/preview/front-dashboard-v2.1.1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 23 Apr 2024 20:07:56 GMT -->
 </html>

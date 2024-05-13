@@ -36,6 +36,52 @@ session_start();
 </head>
 <body>
     <!--Mian Body Area Start-->
+    <?php
+// Check if user is logged in
+if (!isset($_SESSION["user_id"])) {
+    header("Location: login.php");
+    exit();
+}
+
+
+// Retrieve user ID from session
+$userId = $_SESSION["user_id"];
+
+// Function to get user details by ID from the database
+function getUserById($conn, $userId) {
+    $user = null;
+
+    // Prepare and execute query to fetch user by ID
+    $query = "SELECT * FROM users WHERE id = ?";
+    $stmt = mysqli_prepare($conn, $query);
+
+    if ($stmt) {
+        mysqli_stmt_bind_param($stmt, "i", $userId);
+        mysqli_stmt_execute($stmt);
+
+        $result = mysqli_stmt_get_result($stmt);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+            $user = mysqli_fetch_assoc($result);
+        }
+
+        mysqli_stmt_close($stmt);
+    }
+
+    return $user;
+}
+
+// Get user details by ID
+$user = getUserById($conn, $userId);
+
+// Check if user exists and display user information
+if ($user) {
+    // Format last login time
+    $lastLoginTimestamp = strtotime($user['last_login']);
+    $formattedLastLogin = date('l jS Y', $lastLoginTimestamp);
+
+    // Display user information
+    ?>
 
     <!--Header Here-->
     <header class="header-section dashboard__header">
@@ -90,7 +136,7 @@ session_start();
                 <div class="dashboar__wrap">
                     <div class="items d__text">
                         <span class="small">Your balance</span>
-                        <h6>NGN9,000</h6>
+                        <h6>₦ <?= $user['amount']; ?></h6>
                     </div>
                     <div class="items d__cmn">
                         <a href="./payment/index.php" class="cmn--btn">
@@ -306,55 +352,7 @@ session_start();
                         </ul> 
                     </div>
                 </div>
-                <?php
-                // Check if user is logged in
-                if (!isset($_SESSION["user_id"])) {
-                    header("Location: login.php");
-                    exit();
-                }
-
-                require_once "database.php"; // Include your database connection file
-
-                // Retrieve user ID from session
-                $userId = $_SESSION["user_id"];
-
-                // Function to get user details by ID from the database
-                function getUserById($userId) {
-                    global $conn;
-
-                    $user = null;
-
-                    // Prepare and execute query to fetch user by ID
-                    $query = "SELECT * FROM users WHERE id = ?";
-                    $stmt = mysqli_prepare($conn, $query);
-
-                    if ($stmt) {
-                        mysqli_stmt_bind_param($stmt, "i", $userId);
-                        mysqli_stmt_execute($stmt);
-
-                        $result = mysqli_stmt_get_result($stmt);
-
-                        if ($result && mysqli_num_rows($result) > 0) {
-                            $user = mysqli_fetch_assoc($result);
-                        }
-
-                        mysqli_stmt_close($stmt);
-                    }
-
-                    return $user;
-                }
-
-                // Get user details by ID
-                $user = getUserById($userId);
-
-                // Display user details if user exists
-                if ($user) {
-                    // Format last login time
-                    $lastLoginTimestamp = strtotime($user['last_login']);
-                    $formattedLastLogin = date('l jS Y', $lastLoginTimestamp);
-                    
-                    // Display user information
-                    ?>
+                
                 <div class="col-xxl-9 col-xl-9 col-lg-8">
                     <div class="dashboard__body__wrap">
                         <h3 class="account__head mb__30">
@@ -591,8 +589,8 @@ session_start();
     echo "<p>User not found</p>";
 }
 
-mysqli_close($conn);
-?>             </div>
+mysqli_close($conn); // Close database connection
+?>          </div>
                 </div>
             </div>
         </div>

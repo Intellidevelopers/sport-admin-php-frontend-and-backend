@@ -975,7 +975,7 @@
             <div class="nav-item">
               <a class="nav-link active" href="index.php">
                 <i class="bi-house-door nav-icon"></i>
-                <span class="nav-link-title">Dashboards</span>
+                <span class="nav-link-title">Dashboard</span>
               </a>
             </div>
             <!-- End Collapse -->
@@ -1021,7 +1021,7 @@
               <div class="nav-item">
                 <a class="nav-link" href="leaderboard.php">
                   <i class="bi-stickies nav-icon"></i>
-                  <span class="nav-link-title">Leaderboardd</span>
+                  <span class="nav-link-title">Leaderboard</span>
                 </a>
               </div>
               <!-- End Collapse -->
@@ -1321,7 +1321,7 @@ if ($tournament !== false && mysqli_num_rows($tournament) > 0) {
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsGridDropdown1">
-                            <a class="dropdown-item" href="#">Rename project</a>
+                            <a class="dropdown-item" href="tournament-edit.php?id=<?= $userItem['id']; ?>">Update Tournament</a>
                             <a class="dropdown-item" href="#">Add to favorites</a>
                             <a class="dropdown-item" href="#">Archive project</a>
                             <div class="dropdown-divider"></div>

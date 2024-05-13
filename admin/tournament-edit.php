@@ -975,7 +975,7 @@
             <div class="nav-item">
               <a class="nav-link active" href="index.php">
                 <i class="bi-house-door nav-icon"></i>
-                <span class="nav-link-title">Dashboard</span>
+                <span class="nav-link-title">Dashboards</span>
               </a>
             </div>
             <!-- End Collapse -->
@@ -1184,13 +1184,13 @@
         <div class="row align-items-end">
           <div class="col-sm mb-2 mb-sm-0">
 
-            <h1 class="page-header-title">Edit User</h1>
+            <h1 class="page-header-title">Update Tournament</h1>
           </div>
           <!-- End Col -->
 
           <div class="col-sm-auto">
-            <a class="btn btn-primary" href="create-user.php">
-              <i class="bi-person-fill me-1"></i> Add User
+            <a class="btn btn-primary" href="edit-tournament.php">
+              <i class="bi-person-fill me-1"></i> Add Tournament
             </a>
           </div>
           <!-- End Col -->
@@ -1207,36 +1207,38 @@
             <!-- Card -->
             <div class="card">
               <div class="card-header">
-                <h2 class="card-title h4">Basic information</h2>
+                <h2 class="card-title h4">Tournament Details</h2>
               </div>
 
               <!-- Body -->
               <div class="card-body">
                 <!-- Form -->
-                <?=  alertMessage(); ?>
-                <form action="user-code.php" method="post">
-
-                <?php
-                                                
-                $paramResult = checkParamId('id');
-                if(!is_numeric($paramResult)){
-                    echo '<h5>'.$paramResult.'</h5>';
-                    return false;
-                }
-
-                $user = getById('users', checkParamId('id'));
-                if($user['status'] == 200){
+                <?= alertMessage(); ?>
+                <form action="tournament-edit-code.php" method="POST" enctype="multipart/form-data">
                 
+                <?php
+
+            // Retrieve tournament data for pre-populating the form
+            $paramResult = checkParamId('id');
+            if (!is_numeric($paramResult)) {
+                echo '<h5>' . $paramResult . '</h5>';
+                exit; // Stop further execution
+            }
+
+            $user = getById('tournament', $paramResult);
+            if ($user['status'] == 200) {
+                // Display the HTML form for updating tournament details
                 ?>
+
 
                 <input type="hidden" name="userId" value="<?= $user['data']['id']; ?>">
                   <!-- Form -->
                   <div class="row mb-4">
-                    <label for="firstNameLabel" class="col-sm-3 col-form-label form-label">Full name <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Input your full name."></i></label>
+                    <label for="firstNameLabel" class="col-sm-3 col-form-label form-label">Title <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Input your tournament match title."></i></label>
 
                     <div class="col-sm-9">
                       <div class="input-group input-group-sm-vertical">
-                        <input type="text" class="form-control" name="full_name" value="<?= $user['data']['full_name']; ?>" id="firstNameLabel" placeholder="Your full name" aria-label="Your full name" value="Adeagbo Josiah">
+                        <input type="text" class="form-control" name="title" value="<?= $user['data']['title']; ?>" id="firstNameLabel" placeholder="World Cup 2022" aria-label="World Cup 2022">
                       </div>
                     </div>
                   </div>
@@ -1244,54 +1246,76 @@
 
                   <!-- Form -->
                   <div class="row mb-4">
-                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Email</label>
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Club 1</label>
                     <div class="col-sm-9">
-                      <input type="email" class="form-control" name="email" value="<?= $user['data']['email']; ?>" id="emailLabel" placeholder="Email" aria-label="Email" value="mark@site.com">
+                      <input type="text" class="form-control" name="club_1" value="<?= $user['data']['club_1']; ?>" id="club_1Label" placeholder="e.g: Chelsea" aria-label="e.g: Chelsea">
                     </div>
                   </div>
                   <!-- End Form -->
 
-
-                  <!-- Role -->
-                  <div class="row mb-4">
-                    <label for="editRoleModalLabel" class="col-sm-3 col-form-label form-label">Role</label>
+                 <!-- Form -->
+                 <div class="row mb-4">
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Club 2</label>
                     <div class="col-sm-9">
-                    <select name="role" value="<?= $user['data']['role']; ?>" id="editRoleModalLabel" class="form-select form-select-light">
-                        <option value="">Choose a role</option>
-                        <option value="admin" <?= $user['data']['role'] == 'admin' ? 'selected':'' ?>>Admin</option>
-                        <option value="user" <?= $user['data']['role'] == 'user' ? 'selected':'' ?>>User</option>
-                    </select>
-                    </div>
-                </div>
-                    <!-- End Role -->
-
-                    <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="departmentLabel" class="col-sm-3 col-form-label form-label">Password</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" name="password" value="<?= $user['data']['password']; ?>" id="departmentLabel" placeholder="Your password" aria-label="Your password">
+                      <input type="text" class="form-control" name="club_2" id="club_2Label" value="<?= $user['data']['club_2']; ?>" placeholder="e.g: Manchester" aria-label="e.g: Manchester">
                     </div>
                   </div>
                   <!-- End Form -->
 
                   <!-- Form -->
                   <div class="row mb-4">
-                    <label for="departmentLabel" class="col-sm-3 col-form-label form-label">Top up balance</label>
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Result 1</label>
                     <div class="col-sm-9">
-                      <input type="text" class="form-control" name="amount" value="<?= $user['data']['amount']; ?>" id="departmentLabel" placeholder="Top up account balance" aria-label="Top uup account balance">
+                      <input type="club_1" class="form-control" name="result_1" value="<?= $user['data']['result_1']; ?>" id="result_1Label" placeholder="0 6.85" aria-label="0 6.85">
                     </div>
                   </div>
-                  
+                  <!-- End Form -->
+
+                  <!-- Form -->
+                  <div class="row mb-4">
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Result 2</label>
+                    <div class="col-sm-9">
+                      <input type="club_1" class="form-control" name="result_2" value="<?= $user['data']['result_2']; ?>" id="result_2Label" placeholder="7 6.50" aria-label="7 6.50">
+                    </div>
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Form -->
+                  <div class="row mb-4">
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Result 3</label>
+                    <div class="col-sm-9">
+                      <input type="club_1" class="form-control" name="result_3" value="<?= $user['data']['result_3']; ?>" id="result_3Label" placeholder="1 0.55" aria-label="1 0.55">
+                    </div>
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Form -->
+                  <div class="row mb-4">
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Logo 1</label>
+                    <div class="col-sm-9">
+                    <input type="file" name="logo_1" id="customFileEg1" accept="image/*" class="form-control">
+                    </div>
+                  </div>
+                  <!-- End Form -->
+
+                  <!-- Form -->
+                  <div class="row mb-4">
+                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">Logo 2</label>
+                    <div class="col-sm-9">
+                    <input type="file" name="logo_2" id="customFileEg1" accept="image/*" class="form-control">
+                    </div>
+                  </div>
+                  <!-- End Form -->
 
                   <div class="d-flex justify-content-end">
-                    <button type="submit" name="saveChanges" class="btn btn-primary">Save changes</button>
+                    <button type="submit" name="updateTournament" class="btn btn-primary">Update</button>
                   </div>
                   <?php
-                    }else{
-                        echo '<h5>'.$user['message'].'</h5>';
-                    }
-
-                ?>
+} else {
+    // Display error message if tournament data retrieval fails
+    echo '<h5>' . $user['message'] . '</h5>';
+}
+?>
                 </form>
                 <!-- End Form -->
               </div>

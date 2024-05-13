@@ -1246,7 +1246,41 @@
                     <div class="mb-3">
                       <label for="formControlLightGenderSelect" class="form-label">Role</label>
                       <select name="role" id="formControlLightGenderSelect" class="form-select form-select-light">
-                        <option value="">Choose a gender</option>
+                        <option value="">Choose a role</option>
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                      </select>
+                    </div>
+                    <!-- End Form -->
+                    <div class="mb-3">
+                    <button type="submit" name="createUser" class="btn btn-primary w-md-100">Create User</button>
+                    </div>
+                <!-- End Footer -->
+              </div>
+              <div class="card-body">
+                  <div class="w-md-4">
+                    <div class="text">
+                      <h2>Create User</h2>
+                    </div>
+                    <div class="mb-3">
+                      <label for="formControlLightFullName" class="form-label">Full name</label>
+                      <input type="text" class="form-control form-control-light" name="full_name" id="formControlLightFullName" placeholder="Mark Williams" aria-label="Mark Williams">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="formControlLightUsername" class="form-label">Email</label>
+                      <input type="text" class="form-control form-control-light" name="email" id="formControlLightUsername" placeholder="josiah123" aria-label="josiah123">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="formControlLightEmail" class="form-label">Password</label>
+                      <input type="password" class="form-control form-control-light" name="password" id="formControlLightEmail" placeholder="Password" arial-label="Password">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="formControlLightGenderSelect" class="form-label">Role</label>
+                      <select name="role" id="formControlLightGenderSelect" class="form-select form-select-light">
+                        <option value="">Choose a role</option>
                         <option value="admin">Admin</option>
                         <option value="user">User</option>
                       </select>
